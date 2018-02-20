@@ -1,0 +1,59 @@
+<div id="netTie" data-role="view" data-title="Tie Flows" data-layout="pjm-default" data-elastic="false" data-init="initPullToRefreshScrollerForTie" data-before-show="tieFlowInit">
+    <link rel="stylesheet" href="components/tieflows/tieFlows.css" />
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="areasTitle" data-role="button" href="components/controlAreas/controlAreas.html" data-align="right" class="control" data-icon="rightArrowTieflows" style="margin-top: -6px;" data-click='controlAreasCount'>
+                <span class="andriod-control" id="control">Control</span><span style="display: block;line-height: 0.8;" class="areass" id="area">Areas</span>
+            </a>
+            <a id="tableRefreshforAreas" class="tablateView" data-role="button" data-align="right" data-click="pullToRefreshForTieFlows"><img src="styles/images/rotate.png" width=25px height=25px>
+            </a>
+            <span data-role="view-title"></span>
+            <span data-align="center" id="tablateUpdatedDate" style="font-family: HelveticaNeue,sans-serif,Roboto regular;font-size:1em;display:block;font-weight:normal;" class="datediv"></span>
+        </div>
+    </header>
+    <div id='tieFlowsWhite' class='mapdivclr'>
+        <div id="refreshmap" class="divbg">
+            <center id='updatetieFlows' style="display:none;padding-bottom:25px;">
+                <div><img id='rotatingImgtieFlows' src='styles/images/rotate.png' height='25px' />
+                </div>
+                <span>Updating</span>
+            </center>
+            <div id="tieFlowsView">
+                <div class='datediv' id="lastupdatedTieFlows"></div>
+                
+                <div class='tieFlowText' id="ConMW">
+                    Consolidated view in MW
+                </div>
+                <div id="graph"></div>
+                <div id="pjmData">
+                    <div style="float:left;margin-left:5%;">
+                        <div class='actual'>
+                            Actual
+                        </div>
+                        <div class='actimports'>
+                            Imports: <span class='actImportsValue' id="actualImports" style="color:#629920;"></span>
+                        </div>
+                        <div class='actimports'>
+                            Exports: <span class='actImportsValue' id="actualExports" style="color:#1F67C8;"></span>
+                        </div>
+                    </div>
+                    <div style="float:right;margin-right:5%;">
+                        <div class='actual'>
+                            Scheduled
+                        </div>
+                        <div class='actimports'>
+                            Imports: <span class='actImportsValue' id="scheduledImports" style="color:#629920;"></span>
+                        </div>
+                        <div class='actimports'>
+                            Exports: <span class='actImportsValue' id="scheduledExports" style="color:#1F67C8;"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tablteViewFortieflowValues" style="display:none;float:right;border-left:2px solid #BCC1C6;"></div>
+        </div>
+    </div>
+    <script src="scripts/G.Raphael.js" type="text/javascript"></script>
+    <script src="scripts/g.pie.js" type="text/javascript"></script>
+    <script src="components/tieflows/tieFlows.js"></script>
+</div>

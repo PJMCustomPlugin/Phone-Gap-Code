@@ -1,0 +1,76 @@
+<div id="epAlertView" data-role="view" data-title="Emergency Procedures" data-layout="pjm-default" style="visibility:visible !important;" data-before-show="EPAlertsInitMethod">
+    <link href="components/more/alerts/epAlerts/epAlerts.css" rel="stylesheet" />
+    <script src="components/more/alerts/epAlerts/epAlerts.js"></script>
+    <div data-role="header">
+        <div data-role="navbar">
+            <a href="#alertView" data-role="button" data-align="left" data-click="backToAlerts" data-icon="leftArrow">Alerts</a>
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <div class='grayClass alertBGHeight'>
+        <div class="alertBGSubDiv"></div>
+    </div>
+    <div class='mapdivclr allowAlertsMainDiv'>
+        <div class="allowAlertsSubDiv">
+            Allow Alerts
+        </div>
+        <div id='EPAlertSwitchDiv' class="epAlertSwitchDivAlign">
+            <input id="epSwitch" type="checkbox" data-change="onEPAlertsChange" data-role="switch" />
+        </div>
+    </div>
+    <div class='epAlertTextSettings'>
+           Turn Emergency Procedures alerts on or off.
+    </div>
+   <div id='optionsDiv' class='grayClass' style='display:none'>
+        <div class='epAlertsOptionsDiv'>
+            OPTIONS
+        </div>
+        <div class="alertZoneLMPDiv">
+            <a id='areasDivId' class='latestAlertsLink' data-role='button' >
+                <div class='latestAlertsLinkChild'>
+                    Areas
+                </div>
+                <div id="areaSelectedDiv" class="epAlertForwardLinkImg">
+                    <div style='font-family: HelveticaNeue;color: black !important;font-size: 17px;'><span id="areaSelectedText" style="padding-right:10px"></span>
+                        <img width='9px' height='15px' style='padding-top:3px;' src='styles/images/gray_arrow.png' />
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="alertZoneLMPDiv mapdivclr" style="height:44px;border-bottom: 1px solid #BCC1C6;">
+                <a id='typesDivId' class='mapah latestAlertsLink' style="line-height: normal;" data-role='button' >
+                    <!--<div class='afterclassdiv latestAlertsLinkChild' style="padding-top: 10px;width:50%;">-->
+                    <div class='latestAlertsLinkChild' style="padding-top: 10px;width:50%;">
+                        Types
+                    </div>
+                    <div id="typeSelectedDiv" style='float:left;text-align: right;width: 42%;font-family: HelveticaNeue;color: black !important;font-size: 17px;padding-top: 10px;' >
+                       <span id="typeSelectedText" ></span>
+                    </div>
+                    <div id='typesCountDivId' style='display:none;width:35%;float:left;'>
+                        <div id='typesCountBadgeId' class='epTypesSelectedCountBG' style='margin-left: 95% !important;'>
+                            <div id='typesCountTextId' class='badgeCountText' style='padding-top: 2px !important;'><span></span></div>
+                        </div> 
+                    </div>
+                    <div style='float:right;padding-top:13px;margin-right:3%;text-align:right;width:2%'>
+                        <img width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                    </div>
+                </a>
+        </div>
+        <div class='epAlertTextSettings'>
+           Select Areas and Types to receive specific desired alerts on your device.
+        </div>
+    </div>
+    <div id='includeDrillsDiv' class='grayClass' style='display:none'>
+         <div class='mapdivclr allowAlertsMainDiv'>
+            <div class="allowAlertsSubDiv">
+                Include Drills
+            </div>
+            <div id='includeDrillsAlertSwitchDiv' class="epAlertSwitchDivAlign">
+                <input id="includeDrillsSwitch" type="checkbox" data-change="onIncludeDrillsChange" data-role="switch" />
+            </div>
+         </div>
+         <div class='epAlertTextSettings'>
+               Receive messages issued as a part of an emergency procedures drill.
+         </div>
+    </div>
+</div>

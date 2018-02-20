@@ -1,0 +1,80 @@
+<div id="zoneLMPView" data-role="view" data-style="inset" data-title="Zone LMP" data-layout="pjm-default" data-init="initPullToRefreshScroller"  
+     data-transition="slide:right" data-before-show="zoneLMPMapInit">
+    <script src="components/zoneLMPMap/zoneLMPMap.js" type="text/javascript"></script>
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="zoneLMPListTableId" data-role="button" data-icon="rightArrow" 
+               href="components/zoneLMPList/zoneLMPList.html" data-align="right" data-click="lockZoneLMPListView" data-transition="slide:left">
+                Table
+            </a>
+            <a id="zoneLMPLandscapeViewRefreshId" class="tablateView" data-role="button" data-align="right" data-click="zoneLMPLandscapeViewRefresh" style="display:none;">
+                <img src="styles/images/rotate.png" width=25px height=25px>
+            </a>
+            <span data-role="view-title"></span>
+        </div>
+    </header>
+    <!-- zone LMP Map view view for mobile & tablet-->
+   <div id='zoneLMPMapView' class='mapdivclr'>
+        <!-- zone LMP Map view view for mobile -->
+        <div id="zoneLMPMapMobileView" class="divbg" class="normalMobileView">
+            <!-- Display updating in mobile view when we pull --> 
+            <center id='zoneLMPMapState' style="display:none;padding-bottom:25px;">
+                <div>
+                    <img id='updateZoneLMPMapImg' src='styles/images/rotate.png' height='25px' />
+                </div>
+                <span style="color:#5597C6; !important;padding-bottom:20px;">Updating</span>
+            </center>
+            
+            <!-- zone LMP map & legends view -->
+            <div id="zoneLMPViewContainer_mobile">
+                <div id="zoneLMPMapDiv">
+                    <div class='datediv' id="zoneLMPLastUpdatedDate"></div>
+                    <div id="zoneLMPMapScroller" data-role="scroller" data-zoom="true" data-elastic="false" data-pull-to-refresh="true">
+                        <div id="zoneLMPMap"></div>
+                    </div>
+                    <div class='lastupdatedLandscape' id="lastupdatedMapLandscape"></div>
+                </div>
+                <div id="zoneLMPMapLegendsShowDownDiv" style="display:none;">
+                    <div class="mainHeading" id="mainHeading">LMP Values in USD </div>
+                    <div id="mapLegendsNormalView" class="aftermainHeading">
+                        <div id="mapLegendsNormalViewLeft" class="left"></div>
+                        <div id="mapLegendsNormalViewRight" class="right"></div>
+                    </div>
+                </div>
+                <div id="zoneLMPMapLegendsShowRightSideDiv" class="tablateView" style="display:none;" >
+                    <div class="landscapeHeading"> LMP Values in USD </div>
+                    <div id="mapLegendsPhoneLandscape" class="landscapeAfterHeading">
+                    </div>
+                </div>
+            </div>
+            <!-- zone LMP view trend popup -->
+            <div id='viewTrendPopup' style='display:none;text-align:center;padding-top:5px;'></div>
+            <!-- zone LMP trend display popup -->
+            <div id='zoneLMPTrendPopup' style='display:none;'>
+                <div id="eachZoneLastUpdatedDate" class="datediv"></div>
+                <div id="zoneLMPGraph" style="padding-top:10px;padding-bottom:5px;padding-left:5pxpadding-right:2px;">
+                </div>
+                <div id="zoneLMPTrendPopupDivider" style="text-align:center;border-top:1px solid #BCC1C6;">
+                    <div style="color:#418cc0;font-family:HelveticaNeue,sans-serif,roboto;height:55px;line-height:55px;" class="closeButtonDivider"><a class="close-button">Close Trend</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--check network connection and show popup -->
+       <div id="netWorkConnectionCheck" style="display:none;">
+            <div class="netWorkConnectionSubDiv">
+                <b>Please check your network connection.</b>
+            </div>
+        </div>
+        <div id="tableViewGenerating" class="tabletView">
+        </div>
+    </div>
+      <style>
+            div.k-window-content {
+                padding: 0em;
+            }
+            .km-content {
+                background-color: #EBEDEE !important;
+            }
+        </style>
+</div>

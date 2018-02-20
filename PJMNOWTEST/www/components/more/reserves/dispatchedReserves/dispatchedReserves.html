@@ -1,0 +1,43 @@
+<div id="dispatchedReservesView" data-role="view" data-title="Dispatched Reserves" data-layout="pjm-default" data-elastic="false" 
+data-init="initPullToRefreshScrollerForDispatchedReserves" data-before-show="dispatchedReservesInit">
+    <script src="components/more/reserves/dispatchedReserves/dispatchedReservesRuntime.js"></script>
+    <link rel="stylesheet" href="components/more/reserves/dispatchedReserves/dispatchedReserves.css" />
+    <header data-role="header">
+        <div data-role="navbar">
+            <a href="components/more/reserves/operationalReserves/operationalReserves.html" data-click='backToOperationalFromDispatchedReserves' class="bc-more link-font-size" 
+                data-role="button" data-align="left" data-icon="leftArrow" style="text-align:left;">
+                <span style="display:block;width:90px;margin-top: -8px !important;margin-left: 10px">Operational</span>
+                <span style="display:block;width:90px;margin-left: 10px">Reserves</span>
+            </a>
+
+            <!--<a href="#operationalReservesView" data-role="button" data-align="left" class="bc-more" data-click="backToMoreFromDispatchedReserves" 
+                data-transition='slide:right' class=operational" data-icon="leftArrow" style= "margin-top:-7px;">
+                    <span class="andriod-operational" id="operational" style = "font-size: 13px !important;display: inline-block !important;">Operational</span>
+                    <span style="font-size: 13px !important;display: block;line-height: 0.8;" class="reserves" id="reserve">Reserves</span>
+            </a>-->
+            <a id="dispatchedReservesRefresh" class="tablateView" data-role="button" data-align="right" 
+                data-click="pullToRefreshForDispatchedReserves"><img src="styles/images/rotate.png" width=25px height=25px>
+            </a>
+            <span data-role="view-title"></span>
+            <span data-align="center" id="tablateUpdatedDate" 
+            style="font-family: HelveticaNeue,sans-serif,Roboto regular;font-size:1em;display:block;font-weight:normal;" class="datediv"></span>
+        </div>
+    </header>
+    <script src="components/more/reserves/dispatchedReserves/dispatchedReserves.js"></script>
+    <div id='dispatchedReservesWhite' class='mapdivclr'>
+        <div id="refreshmap" class="divbg">
+            <center id='updateDispatchedReserves' style="display:none;padding-bottom:25px;">
+               <div><img id='rotatingImgDispatchedReserves' src='styles/images/rotate.png' height='25px'/>
+               </div>
+            <span style="color:#5597C6; !important;padding-bottom:20px;">Updating</span>
+            </center>
+            <div id="refreshReservesGraph" style="background-color:white !important;">
+                <div class='datediv' id="lastDispatchedReservesUpdatedDate"></div>
+                <div class='dispatchedReservesText' id="ConMW">
+                    Values shown in MW
+                </div>
+                <div id="dispatchedReservesChart"></div>
+            </div>
+       </div>
+    </div>
+</div>

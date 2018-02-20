@@ -1,0 +1,87 @@
+#alertDetailContainer{
+    width:100%;
+    text-align: left;
+    color: black !important;
+    background-color: white !important; 
+    font-size: 1.2em !important;
+    word-wrap: break-word;
+    font-family: HelveticaNeue;
+    height : 100vh; 
+}
+
+#alertDetailMessageType {
+    padding-bottom: 6px !important;
+    font-size: 19px !important;
+    font-family: HelveticaNeue !important;
+}
+#alertDetailSmallText {
+    font-family: HelveticaNeue !important;
+    font-size: 15px;
+    padding-top: 1px !important;
+}
+
+#alertDetailMediumText {
+    font-family: HelveticaNeue !important;
+    font-size: 15px !important;
+    padding-bottom: 10px !important;
+    padding-top: 1px !important;
+}
+
+#alertDetailsDiv{
+    padding-left:15px !important;
+    padding-top:15px !important;
+    padding-right:20px !important;
+    border-bottom: 1px solid #BCC1C6;
+}
+
+#messageDiv{
+    font-family: HelveticaNeue !important;
+    padding-right:20px !important;
+    padding-left:15px !important;
+    padding-top:13px !important;
+    font-size: 15px !important;
+}
+
+.bannerTypeClass {
+   	height: 25px;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: 5px;
+    margin-bottom:5px !important;
+    font-family:HelveticaNeue;
+    color:#000;
+    font-size:14px !important;
+    text-align:center;
+    line-height:25px;
+}
+
+#bannerText{
+    line-height: 22px !important;
+}
+
+.bannerBGColorPink{
+   background-color: #FECBE5;
+   border: 1px solid #FECBE5;  
+}
+
+.bannerBGColorYellow{
+   background-color: #FEEFCE;
+   border: 1px solid #FEEFCE; 
+}
+
+.bannerBGColorGreen{
+   background-color: #9ACB40;
+   border: 1px solid #9ACB40; 
+}
+
+.km-list input[type=checkbox] {
+    position: initial;
+    padding-right: 20px !important;
+}
+#messageDiv{
+    text-decoration:none !important;
+}
+#alertDetail div.km-content.km-widget.km-scroll-wrapper div.km-scroll-container {
+   -webkit-transform: none !important;
+   -transform: none !important;
+}

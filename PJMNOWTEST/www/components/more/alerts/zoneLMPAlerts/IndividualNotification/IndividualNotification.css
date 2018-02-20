@@ -1,0 +1,132 @@
+.km-content {
+    background-color: #EBEDEE !important;
+}
+#notificationView {
+    background-color: #EBEDEE !important;
+}
+.LMPText {
+    color: #7A838D;
+    font-size: 14px;
+    font-family: HelveticaNeue;
+}
+.LMPSmallText {
+    color: #7A838D;
+    font-size: 13px;
+    font-family: HelveticaNeue;
+}
+.LMPValueText {
+    color: #7A838D;
+    font-size: 24px;
+    font-family: HelveticaNeue-Bold;
+}
+.km-ios7 span.km-switch {
+    color: #4cda64 !important;
+}
+.grayClass {
+    background-color: #EBEDEE !important;
+}
+#notificationsLMPList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#notificationsLMPList li {
+    padding: 1em;
+    width: 100%;
+    height: 44px;
+    list-style-position: inside;
+    border-top: 1px solid #BCC1C6;
+}
+#editValDiv .km-button:hover {
+    background-color: transparent;
+    color: #408CC0 !important;
+}
+
+.allowAlertsMainDiv {
+    height:44px;
+    line-height:44px;
+}
+
+.allowAlertsSubClassDiv {
+    float:left;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;
+    margin-left:3%;
+}
+
+.individualSwitchMainClass {
+    float:right;
+    margin-right:3%;
+    padding-top:6px;
+}
+.frequencySubdiv {
+    height:40px;
+    padding-bottom: 3px;
+}
+.setLMPAlertSubDiv {
+    margin-left:3%;
+    padding-top:20px;
+}
+
+.alertMessage {
+    margin-left:3%;
+    padding-top:6px;
+    color:black !important;
+}
+
+.LMPTextMainDiv {
+    padding-top:25px;
+}
+
+.LMPTextSubDiv {
+    margin-left:3%;
+    float:left;
+}
+.individualLMPValueColor {
+    color:black !important;
+}
+
+.individualValueEditStyle {
+    color:#408CC0 !important;
+    text-decoration: none !important;
+    border-style: none !important;
+    font-size:17px !important;
+}
+.individualMessageTextDiv {
+    height:80px;
+}
+.individualMessageTextSubDiv {
+        padding-top:18px;
+        margin-left:3%;
+}
+.editValueDiv {
+    margin-right:3%;
+    float:right;
+    color:#007aff;
+}
+.LMPTextRemainingBackground {
+    height:40px;
+}
+
+.alertMessageMainDiv {
+    height:80px;
+}
+
+.individualLMPUpperValueClass {
+    color: #000000;
+    font-size: 16px;
+    font-family: HelveticaNeue;
+}
+.individualLMPLowerValueClass{
+    color: #000000;
+    font-size: 16px;
+    font-family: HelveticaNeue;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,71 @@
+
+div.k-window-content {
+    padding: 0em;
+}
+#myDropdown .km-vertical-scrollbar
+{   
+    width: 6px;
+    border-radius: 3px;
+    height: 70px;
+    background-color: red;
+}
+            
+.dropdown-content a {
+    background-color: #f8f8f8;
+    color: black;
+    font-family:HelveticaNeue,sans-serif,Roboto regular !important;
+    font-size: 15px;
+    text-decoration: none;
+    display: block;
+    padding-left: 5px;
+    padding-top: 2px;
+    width: 88%;
+}
+.highcharts-tooltip {
+    z-index : 9998 !important;
+}
+
+.dropdown-content {
+    display:none;
+    background-color: #f8f8f8;
+    border-radius: 0px 0px 5px 5px;
+    width: 134px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    height:221px;
+    float: left;
+    min-height:160px;
+    margin-bottom: 25px;
+    position: absolute;
+    overflow :auto;
+    z-index: 1;
+ }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width : 110px;
+ }
+.dropbtn {
+    /*background-color: #f8f8f8;*/
+    color: black;
+    padding: 0px;
+    font-family:HelveticaNeue,sans-serif,Roboto regular !important;
+    font-size: 15px;
+    border-radius:5px 5px 0px 0px;
+    cursor: pointer;
+    width: 134px;
+}
+
+div.scroll {
+    background-color: #00FFFF;
+    width: 100px;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.highcharts-container {
+    position: inherit !important;
+}
+.highcharts-title {
+    margin-top:15px;
+}

@@ -1,0 +1,63 @@
+{
+  "Framework": "Cordova",
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "6.4.0",
+  "ProjectName": "PJM NOW TEST",
+  "ProjectGuid": "14bcbb4c-609a-46b5-987b-057bc1290837",
+  "projectVersion": "1",
+  "AppIdentifier": "com.pjm.pjmnowva",
+  "DisplayName": "PJM Now Test",
+  "Author": "PJM Interconnection",
+  "Description": "View PJM real-time power prices, track grid conditions and get alerts.",
+  "BundleVersion": "1.6.1",
+  "AndroidVersionCode": "7",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [
+    "remote-notification"
+  ],
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{401c2296-5ac0-4098-8a0f-d90c62176d33}",
+  "WP8ProductID": "{46adfc51-d0dd-407a-8764-41a9fc96082e}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.PJMNow",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ],
+  "CorePlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-device-motion",
+    "cordova-plugin-dialogs",
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-network-information",
+    "cordova-plugin-splashscreen",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-vibration",
+    "cordova-plugin-whitelist",
+    "com.shazron.cordova.plugin.keychainutil@2.0.0",
+    "de.appplant.cordova.plugin.email-composer@0.8.2.1",
+    "net.yoik.cordova.plugins.screenorientation@1.3.3",
+    "uk.co.whiteoctober.cordova.appversion@0.1.7"
+  ],
+  "CordovaPluginVariables": {}
+}

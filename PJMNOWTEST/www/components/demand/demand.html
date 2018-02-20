@@ -1,0 +1,81 @@
+<div data-role="view" data-title="Demand" data-layout="pjm-default"  data-init="initPullToRefreshScrollerForDemand">
+    <header data-role="header">
+        <div data-role="navbar">
+            <a id="tableRefreshForDemand" data-role="button" data-align="right" data-click="pullToRefreshDemand" style="display:none;">
+                <img src="styles/images/rotate.png" width=25px height=25px>
+            </a>
+            <span data-role="view-title"></span>
+            <span data-align="center" id="tablateUpdatedDateForDemand" 
+                    style="font-family:HelveticaNeue,sans-serif,Roboto regular;font-size:1em;display:block;font-weight:normal;" class="datediv"></span>
+        </div>
+    </header>
+    <script src="components/demand/demand.js" type="text/javascript"></script>
+    <div id='demandWhite' class='mapdivclr'>
+    	<div id="refreshDemand" class="divbg">
+        <center id='updateDemand' style="display:none;padding-bottom:25px;">
+            <div><img id='rotatingImgDemand' src='styles/images/rotate.png' height='25px' />
+            </div>
+            <span style="color:#5597C6; !important;padding-bottom:20px;">Updating</span>
+        </center>
+        <div id="refreshDemandGraph" style="background-color:white !important;">
+            <div class='datediv' id="lastupdatedGraph"></div>
+            <div id="chart1"></div>
+        </div>
+        <div id="modaldialog_demand" style="display:none">
+            <div class='feedbackHeading'>
+                How do you like our new features?
+            </div>
+            <div class='feedbackContent'>
+                Please provide us feedback so we can continue to improve PJM Now.
+            </div>
+            <div class='feedbackFooter'>
+                <div id='Laterbtn_demand' class='feedbackFooterLater'>
+                    <center style='margin-top:13px'>Later</center>
+                </div>
+                <div id='Okbtn_demand' class='feedbackFooterOk'>
+                    <center style='margin-top:13px'>OK</center>
+                </div>
+            </div>
+        </div>
+        <style>
+            div.k-window-content {
+                padding: 0em;
+            }
+            #myDropdown .km-vertical-scrollbar
+            {   
+                width: 6px;
+                border-radius: 3px;
+                height: 70px;
+                background-color: #BCC1C6;
+            }
+            /*span.highcharts-title{
+                left:2% !important;
+            }*/
+            .dropdown-content {
+                display:none;
+                background-color: #f8f8f8;
+                border-radius: 0px 0px 5px 5px;
+                width: 149px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                //height:207px;
+                position: absolute;
+            }
+            .dropdown-content a {
+                background-color: #f8f8f8;
+                color: black;
+                font-family:HelveticaNeue,sans-serif,Roboto regular !important;
+                font-size: 14px;
+                text-decoration: none;
+                display: block;
+                padding-left: 5px;
+                padding-top: 2px;
+                padding-bottom: 3px;
+                width: 139px;
+            }
+            .highcharts-tooltip {
+                z-index : 8 !important;
+            }
+        </style>
+    </div>
+    </div>
+</div>

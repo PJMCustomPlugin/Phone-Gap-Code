@@ -1,0 +1,28 @@
+.km-ios7 .km-scroller-pull.km-scroller-refresh .km-icon::before {
+    background-image: none !important;
+    content: none !important;
+    color: #2984B3;
+    display: none !important;
+}
+.dispatchedReservesText {
+    color: #7A848D;
+    font-family: HelveticaNeue;
+    font-size: 11pt;
+    padding-left: 2% !important;
+}
+
+#dispatchedReservesView_land div.km-content.km-widget.km-scroll-wrapper div.km-scroll-container {
+   -webkit-transform: none !important;
+   -transform: none !important;
+}
+.operational {
+    font-size: 12px !important;
+    display: inline-block !important;
+}
+span.km-leftArrow:after, .km-leftArrow:before{
+    color: #408CC0 !important;
+}
+.link-font-size {
+    font-size: 11.5px !important;
+    display: inline-block !important;
+}

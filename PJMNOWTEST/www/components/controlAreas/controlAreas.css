@@ -1,0 +1,119 @@
+.reorderingAreas {
+    width: 30px;
+    height: 15px;
+    margin-left: 3%;
+}
+#sortableAreas {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sortableAreas li {
+    padding: 1em 0em;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #BCC1C6;
+}
+#sortableAreas li:first-child {
+    padding: 1em 0em;
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #BCC1C6;
+}
+.PJM-RTO-vertical-text {
+    -webkit-transform: rotate(-450deg);
+    transform: rotate(-450deg);
+    -ms-transform-origin: right bottom 0;
+    -moz-transform-origin: right bottom 0;
+    -webkit-transform-origin: right bottom 0;
+    transform-origin: left top 10;
+    background: #7A848D;
+    color: #fff;
+    text-transform: uppercase;
+    text-transform: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    float: right;
+    text-align: center;
+    height: 3%;
+    margin-top: -29px;
+    padding: 3px 0px;
+    font-size: 14pt;
+}
+@media only screen and (max-width: 320px) and (orientation: portrait),
+only screen and (max-width: 568px) and (orientation: landscape) {
+    /* iPhone 5 only */
+    
+    .vertical-text {
+        font-size: 11pt;
+        margin-top: -25px;
+    }
+    #sortableAreas li {
+        width: 100%;
+    }
+    #sortableAreas li:first-child {
+        width: 100%;
+    }
+}
+.setPadding {
+    float: right;
+    width: 3%;
+    /*padding-top: 19px;*/
+}
+.setWidth {
+    width: 25%;
+    float: left;
+    font-family: HelveticaNeue-Bold;
+    font-size: 15pt;
+    text-align: center;
+    margin-top: -14px;
+    line-height: 75%;
+}
+.loopflowValueDiv {
+    width: 30%;
+    float: left;
+    font-family: HelveticaNeue-Bold;
+    font-size: 15pt;
+    text-align: center;
+    margin-top: -14px;
+    line-height: 75%;
+}
+.ParentHeader {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #BCC1C6;
+    padding-top: 15px;
+}
+.areaClass {
+    width: 20%;
+    float: left;
+    padding-left: 10px;
+    font-family: HelveticaNeue-Medium;
+    font-size: 12pt;
+}
+.actualClass {
+    width: 25%;
+    float: left;
+    font-family: HelveticaNeue-Medium;
+    font-size: 12pt;
+    text-align: center;
+}
+.scheduledClass {
+    width: 25%;
+    float: left;
+    font-family: HelveticaNeue-Medium;
+    font-size: 12pt;
+    text-align: center;
+}
+.loopFlowClass {
+    width: 28%;
+    float: left;
+    font-family: HelveticaNeue-Medium;
+    font-size: 12pt;
+    text-align: center;
+}
+.verticalTextWidth {
+    width: 4%;
+}
+.sortableAreaswidthClass {
+    width: 96%;
+    float: left;
+}

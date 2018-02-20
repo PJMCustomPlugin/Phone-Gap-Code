@@ -1,0 +1,559 @@
+<div id="moreView" data-role="view" data-style="inset" data-title="More" data-layout="pjm-default" data-before-show='moreViewInit'>
+    <link href="components/more/more.css" rel="stylesheet" />
+    <link href="components/more/alerts/latestAlerts/alertDetail/alertDetail.css" rel="stylesheet" />
+    <script src="components/more/alerts/latestAlerts/latestAlerts.js" type="text/javascript"></script>
+    <script src="components/more/alerts/latestAlerts/alertDetail/alertDetail.js" type="text/javascript"></script>
+    <script src="components/more/alerts/epAlerts/epTypes/epTypes.js" type="text/javascript"></script>
+    <script src="components/more/alerts/epAlerts/epAreas/epAreas.js" type="text/javascript"></script>
+    <script src="components/more/alerts/epAlerts/epAlerts.js" type="text/javascript"></script>
+    <header data-role="header">
+        <div data-role="navbar">
+            <span id='listTitle' data-role="view-title"></span>
+            <span id='headerTag' style='display:none;'></span>
+            <a data-click='backToZoneLMPClick_Tab' id="backToZoneLMP_Tab" data-role="button" data-align="left" style='display:none;margin-top:-1px' data-icon="TableftArrow">
+                Zone LMP
+            </a>
+            <a data-click='backToNotificationsClick_Tab' id="backToNotifications_Tab" data-role="button" data-align="left" style='display:none;margin-top:-1px' data-icon="TableftArrow">
+               Alerts
+            </a>
+            <a data-click='backToLatestAlertsClick_Tab' id="backToLatestAlerts_Tab" data-role="button" data-align="left" style='display:none;margin-top:-1px;line-height: 3.5em;' data-icon="TableftArrow">
+                Latest Alerts and Messages
+            </a>
+            <a data-click='backToEPClick_Tab' id="backToEP_Tab" data-role="button" data-align="left" style='display:none;margin-top:-1px;line-height: 3.5em;' data-icon="TableftArrow">
+                Emergency Procedures
+            </a>
+        </div>
+    </header>
+    <div id='moreWhite' class='mapdivclr'>
+        
+        <!--  Portrait Mode More View in both Tablate and Mobile   -->
+        <div id='moreList_Phone'>
+            <ul class='menuList'>
+                <li class='menuListTitleNone' style='background-color:#F2F2F2;'></li>
+                <li class='menuListTitle' data-role='button'>
+                    <a class='moreListImg aboutPJMPortraitStyle' data-role='button' href="components/more/reserves/operationalReserves/operationalReserves.html" 
+                                                              data-click="reservesClick" data-transition='slide:left'>
+                        <div class="divCellImg">
+                            <img id='legalDescImgPor' class='menuCellImg' src="styles/images/homePageImages/Icon_reserves.png" />
+                        </div>
+                        <div class="cellTitle">
+                            Reserves
+                        </div>
+                    </a>
+                </li>
+                <li class='menuListTitleNone' style='background-color:#F2F2F2;'></li>
+                <li class='menuListTitle' data-role='button'>
+                    <a class='moreListImg aboutPJMPortraitStyle' data-role='button' href="components/more/alerts/alerts.html" 
+                                                              data-click="notificationCount" data-transition='slide:left'>
+                        <div class="divCellImg">
+                            <img id='alertsImgPor' class='menuCellImg' src="styles/images/homePageImages/MenuCell_NonSelected_1.png" />
+                        </div>
+                        <div class="cellTitle">Alerts</div>
+                        <div class='grayArrowImgDiv morePortraitImageStyle'>
+                            <div id='notificationEnabledStatus' class="alertsStatusInPortraitStyle">Off</div>
+                            <div class="imageAfterStatus">
+                                <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class='menuListTitleNone' style='background-color:#F2F2F2;'></li>
+                <li class='menuListTitle' data-role='button'>
+                    <a class='moreListImg aboutPJMPortraitStyle' data-role='button' href="components/more/aboutPJM/aboutPJM.html" 
+                                                                 data-click="aboutPJMCount" data-transition='slide:left'>
+                        <div class="divCellImg">
+                            <img id='aboutPJMImgPor' class='menuCellImg' src="styles/images/homePageImages/MenuCell_NonSelected_2.png" />
+                        </div>
+                        <div class="cellTitle">About PJM</div>
+                        <div class='grayArrowImgDiv morePortraitImageStyle'>
+                            <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+                    </a>
+                </li>
+                <li class='menuListTitle' data-role='button'>
+                    <a class='moreListImg legalPortraitClass' data-role='button' href="components/more/legalDisclaimer/legalDisclaimer.html" 
+                                                              data-click="legalDisclaimerCount" data-transition='slide:left'>
+                        <div class="divCellImg"><img id='legalDescImgPor' class='menuCellImg' src="styles/images/homePageImages/MenuCell_NonSelected_0.png" /></div>
+                        <div class="cellTitle">Legal Disclaimer</div>
+                        <div class='grayArrowImgDiv morePortraitImageStyle'>
+                            <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+                    </a>
+                </li>
+                <li class='menuListTitle' data-role='button'>
+                    <a class='moreListImg aboutPJMPortraitStyle' data-role='button' href="components/more/feedback/feedback.html"  
+                                                                 data-click="feedbackCount" data-transition='slide:left'>
+                        <div class="divCellImg"><img id='feedbackImgPor' class='menuCellImg' src="styles/images/homePageImages/MenuCell_NonSelected_3.png" /></div>
+                        <div class="cellTitle">Feedback</div>
+                        <div class='grayArrowImgDiv morePortraitImageStyle'>
+                            <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!--  LandScape Mode  More view only in Tablate  -->
+       <div id='moreList_Tab' style='display:none;float:left;border-right:1px solid #BCC1C6;background-color:#ECEFF0;'>
+            <ul class='menuList'>
+                <li class='menuListTitleNoneTab' style='background-color:#ECEFF0;'></li>
+                <li id='reserves_li' class='menuClass'>
+                    <a onclick="onClick(5,'Reserves')" class="alertMoreLinkLandCSS">
+                        <div class="cellImg"><img id='reservesImg' class='menuCellImg legalDisLandMoreTab' src="styles/images/homePageImages/Icon_reserves.png" /></div>
+                        <div class="cellTitle_tab link legalDisclaimerInternalTabMore">Reserves
+                            <img width='9px' height='15px' src='styles/images/gray_arrow.png' class="moreLandImgStyleClass" />
+                        </div>
+                    </a>
+                </li>
+                <li class='menuListTitleNoneTab' style='background-color:#ECEFF0;'></li>
+                <li id='notifications_li' class='menuClass alertMoreLandStyleClass'>
+                    <a onclick="onClick(3,'Alerts')" class="alertMoreLinkLandCSS">
+                        <div class="cellImg"><img id='notificationsImg' class='menuCellImg legalDisLandMoreTab' src="styles/images/homePageImages/MenuCell_NonSelected_1.png"  />
+                        </div>
+                        <div class="cellTitle_tab link notificationTextColorStyle" id="notificationsText">
+                            <div id='notificationTitle' style='color:white'>Alerts
+                                <img width='9px' height='15px' src='styles/images/gray_arrow.png' class="moreLandImgStyleClass" />
+                            </div>
+                            <div id='notificationEnabledStatus_tab' class="notificationEnabledStatusTabMoreLand">Off</div>
+                        </div>
+                    </a>
+                </li>
+                <li class='menuListTitleNoneTab' style='background-color:#ECEFF0;'></li>
+                <li id='aboutPJM_li' class='menuClass'>
+                    <a onclick="onClick(2,'About PJM')" class="alertMoreLinkLandCSS">
+                        <div class="cellImg"><img id='aboutPJMImg' class='menuCellImg legalDisLandMoreTab' src="styles/images/homePageImages/MenuCell_NonSelected_2.png" />
+                        </div>
+                        <div class="cellTitle_tab link legalDisclaimerInternalTabMore" id="aboutPJMText">About PJM
+                            <img width='9px' height='15px' src='styles/images/gray_arrow.png' class="moreLandImgStyleClass" />
+                        </div>
+                    </a>
+                </li>
+                <li id='legalDisclaimer_li' class='menuClass'>
+                    <a onclick="onClick(1,'Legal Disclaimer')" class="alertMoreLinkLandCSS">
+                        <div class="cellImg"><img id='legalDisclaimerImg' class='menuCellImg legalDisLandMoreTab' src="styles/images/homePageImages/MenuCell_NonSelected_0.png" />
+                        </div>
+                        <div class="cellTitle_tab link legalDisclaimerInternalTabMore" id="legalDisclaimerText" >Legal Disclaimer
+                            <img width='9px' height='15px' src='styles/images/gray_arrow.png' class="moreLandImgStyleClass"/>
+                        </div>
+                    </a>
+                </li>
+                <li id='feedback_li' class='menuClass'>
+                    <a onclick="onClick(4,'Feedback')" class="alertMoreLinkLandCSS">
+                        <div class="cellImg"><img id='feedbackImg' class='menuCellImg legalDisLandMoreTab' src="styles/images/homePageImages/MenuCell_NonSelected_3.png" />
+                        </div>
+                        <div class="cellTitle_tab link legalDisclaimerInternalTabMore" id="feedbackText">Feedback
+                            <img width='9px' height='15px' src='styles/images/gray_arrow.png' class="moreLandImgStyleClass" />
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Landscape Mode More About PJM View in Tablate -->
+        
+        <div id='aboutTabView' class='moreTabView moreTabDisplayState' style='background-color:#FFF;height:635px;'>
+            <div class='moreContent'>
+                PJM Interconnection, founded in 1927, ensures the reliability of the high-voltage electric power system serving 61 million people in all or parts of Delaware,
+                Illinois, Indiana, Kentucky, Maryland, Michigan, New Jersey, 
+                North Carolina, Ohio, Pennsylvania, Tennessee, Virginia, West Virginia and the District of Columbia.
+                <br>
+                <br> PJM coordinates and directs the operation of the region’s transmission grid, which includes 62,556 miles of transmission lines; 
+                administers a competitive wholesale electricity market; 
+                and plans regional transmission expansion improvements to maintain grid reliability and relieve congestion.
+            </div>
+            <div class='buttonDivTab' align='center'>
+                <a data-role="button" data-click="goToWebsite">Visit pjm.com</a>
+            </div>
+        </div>
+        <!-- Landscape Mode More Reserves View in Tablate -->
+        
+        <div id='reservesTabView' class='moreTabView moreTabDisplayState' style='background-color:#FFF;height:635px;'>
+            <div class='moreContent' align="center" style="margin-top:40%;">
+                Reserves screen in progress
+            </div>
+        </div>
+        
+        <!-- Landscape Mode More Feedback View in Tablate -->
+        
+        <div id='feedbackTabView' class='moreTabView moreTabDisplayState' style='background-color:#FFF;height:635px;'>
+            <div class='moreContent'>
+                Report an issue, ask a question or let us know how we can improve PJM Now:
+            </div>
+            <br>
+            <div class='buttonDivTab' align='center'>
+                <a data-role="button" data-click="composeEmail">Give Feedback</a>
+            </div>
+        </div>
+        
+         <!-- Landscape Mode More LegalDisclaimer View in Tablate -->
+        
+        <div id='legalDisclaimerTabView' class='moreTabView moreTabDisplayState' style='background-color:#FFF;height:635px;'>
+            <div class='moreContent'>
+                The PJM Now app exists to provide a clear understanding of the concepts and terms used by PJM. The information provided 
+                in the PJM Now app is for informational and educational purposes only, and should not be relied upon to govern business or financial decisions.
+                <br>
+                <br> PJM expressly disclaims any obligation to correct or update information contained in the PJM Now app, or any warranty of any kind, 
+                whether express or implied, 
+                as to any information or other matters whatsoever arising from or the information contained in the PJM Now app. 
+                Entities utilizing the PJM Now app and relying on the information contained herein do so at their own risk. 
+                In no event shall PJM be liable for any damages of any kind, including, 
+                but not limited to, direct, indirect, general, special, incidental or consequential damages arising out of any use of the information contained therein.
+            </div>
+        </div>
+        
+          <!-- Landscape Mode More Alerts View in Tablate -->
+        
+        <div id='alertTabView' class='moreTabView' style="display:none;float:right;">
+            <div class='LMPText grayclass moreBGAlertLand'>
+                <div class="LMPTextGrayStyle"></div>
+            </div>
+            <div id='alertTabSwitchdiv' class='alertTabSwitchLand mapdivclr'>
+                <div class="allowAlertMessageLand">
+                    Allow Alerts
+                </div>
+                <div class="switchDivClassLand" id="switchDiv">
+                    <input id="alertTabSwitch" type="checkbox" data-change="onAlertsTabChange" data-role="switch" />
+                </div>
+            </div>
+            <div id='viewLatestAlertsTabDiv' class='zoneLMPTabBar mapdivclr' >
+                    <a id='latestAlertAnchor' data-role='button' class="zoneLMPHyperLandTab" data-click='onLatestAlertsDivClick_tab'>
+                        <div id='latestAlertsTextDivTab' class='zoneLMPTabLand textdiv' style='padding-top: 10px;width:84%;text-align: left;'>
+                            Latest Alerts and Messages
+                        </div>
+                        <div id='badgeCountTabDivId' class='badgeCountBGCircle' style='display:none'>
+                            <div id='badgeIdTab' class='badgeCountText'><span></span></div>
+                        </div>
+                        <div class="zoneLMPTabLandImgStyle">
+                            <img width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+                    </a>
+            </div>
+            <div id='settingsTabDiv' class='grayclass' style='display:none'>
+                <div class='settingTabLand LMPText' style='margin-left:6%;margin-right:6%'>
+                    SETTINGS
+                </div>
+                <div id='zoneLMPTabDiv' class='zoneLMPTabBar mapdivclr'>
+                    <a data-role='button' class="zoneLMPHyperLandTab" data-click='ZoneLMPTabClick'>
+                        <div class='zoneLMPTabLand textdiv'>
+                            Zone LMP
+                        </div>
+                        <div class="zoneLMPTabLandImgStyle">
+                            <div id='zoneLMPAlertsStatusTab' class="alertsStatusInPortraitStyle">
+                            </div>
+                            <div class="imageAfterStatus" style='padding-top: 3px'>
+                                <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id='epTabDivzoneLMPTabLandImgStyle' class='EpTabBar mapdivclr'>
+                    <a data-role='button' class="zoneLMPHyperLandTab" data-click='onEPDivClick_Tab'>
+                        <div class='zoneLMPTabLand textdiv'>
+                           Emergency Procedures
+                        </div>
+                        <div class="zoneLMPTabLandImgStyle">
+                            <div id='epAlertsStatusTab' class="alertsStatusInPortraitStyle">
+                            </div>
+                            <div class="imageAfterStatus" style='padding-top: 3px'>
+                                <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id="iosAlertsSettingsLand" class='LMPsmallTextPhone mobileAlertSettingsLand' style="display:none;margin-left:6%;">
+            		Alert options can be changed in Settings > Notifications.<br><br>Note: Zone LMP alerts do not show as badges.
+        		</div>
+                 <div id="androidAlertsSettingsLand" class='LMPsmallTextPhone mobileAlertSettingsLand' style="display:none;margin-left:6%;">
+            		Alert options can be changed in Settings > Sounds and notifications.<br><br>Note: Zone LMP alerts do not show as badges.
+        		</div>
+            </div>
+        </div>
+        
+          <!--  Landscape More More ZoneLMP notification list in Tablate  -->
+        
+        <div id='notificationTabView' class='moreTabView moreTabDisplayState' style='overflow-y:scroll'>
+            <div  class='moreBGAlertLand LMPText grayclass'>
+                <div class="includeDivStyleLandTab">INCLUDE</div>
+            </div>
+            <div class='mapdivclr notificationIncludeTabLand'>
+                <ul id="notificationsIncludeLMPTabList" class='notificationsLMPList'></ul>
+                <div id='includeTabNone' style='height:40px;display:none'>
+                    <div class="includeTabNoneDivTabLand">None</div>
+                </div>
+            </div>
+            <div class='moreBGAlertLand LMPText grayclass'>
+                <div class="doNotIncludeTabLand">DO NOT INCLUDE</div>
+            </div>
+            <div class='mapdivclr doNotIncludeListTabLand'>
+                <ul id="notificationsExcludeLMPTabList" class='notificationsLMPList'></ul>
+                <div id='excludeTabNone' style='height:40px;display:none'>
+                    <div class="excludeTabNoneLand">None</div>
+                </div>
+            </div>
+        </div>
+        
+        
+         <!--  Landscape More More Individual Notification Setting  in Tablate  -->
+        
+        <div id='individualNotificationTabView' class='moreTabView moreTabDisplayState'>
+            <div  class='moreBGAlertLand LMPText grayclass'>
+            </div>
+            <div  class='allowAlertsLandMoreTabMain mapdivclr'>
+                <div class="allowAlertsLandMoreTabSubDiv">
+                    Allow Alerts
+                </div>
+                <div id="individualTabDiv" class="individualTabDivLand" >
+                    <input id="individualTabswitch" type="checkbox" data-change="onIndividualTabChange" data-role="switch" />
+                </div>
+            </div>
+            <div id='frequncyTabDiv' style='display:none'>
+                <div class='moreBGAlertLand grayclass'>
+                    <div class='setLMPAlertTabLand LMPSmallText'>
+                        SET ALERT THRESHOLDS
+                    </div>
+                </div>
+                <div id='zoneLMPUpperLimitTabDiv' class='zoneLMPTabBar mapdivclr'>
+                    <a data-role='button' class="zoneLMPHyperLandTab" data-click='upperLimitTabDisplay'>
+                        <div class='zoneLMPTabLand textdiv'>
+                            Upper Limit
+                        </div>
+                        <div class="zoneLMPTabLandImgStyle">
+                            <div id='individualLMPUpperValueTab' class="alertsStatusInPortraitStyle">
+                            </div>
+                            <div class="imageAfterStatus" style='padding-top: 3px'>
+                                <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div id='zoneLMPLowerLimitTabDiv' class='zoneLMPTabBar mapdivclr'>
+                    <a data-role='button' class="zoneLMPHyperLandTab" data-click='lowerLimitTabDisplay'>
+                        <div class='zoneLMPTabLand textdiv'>
+                            Lower Limit
+                        </div>
+                        <div class="zoneLMPTabLandImgStyle">
+                            <div id='individualLMPLowerValueTab' class="alertsStatusInPortraitStyle">
+                            </div>
+                            <div class="imageAfterStatus" style='padding-top: 3px'>
+                                <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+                 <!--  Landscape More More Individual Notification Setting  key board in Tablate  -->
+               
+            <div id='LMPValueScreen' class="LmpValueKeyBoardMainDivStyle">
+                <header data-role="header" class='km-header'>
+                    <div data-role="navbar" class='km-widget km-navbar navBarCustomStyleforKeyBoard'>
+                        <div class="navbarSibdiv">
+                            <a onclick='LMPCancelClicked(this)' id="cancel" data-role="button" class="cancelInLandKeyboard">Cancel</a>
+                            <span id="thresholdSetTabTitle" class="keyboardHeadingLandTab"></span>
+                            <a onclick='LMPDoneClicked(this)' id="done" data-role="button" class="doneInLandKeyboard">Done</a>
+                        </div>
+                    </div>
+                </header>
+                <div class="enterMsgLandTab">
+                    <div class="enterMsgLandTabChild">
+                        Enter a Zone LMP
+                    </div>
+                    <div  class='enterMsgLandTabChildOne LMPValueText'>
+                        <span id="valueforZoneCal" class="valuezoneNegtiveTabLand">-</span>$
+                        <span class='LMPValueText LMPValueTextValueTabLand' id='textBox1'></span>.00
+                    </div>
+                    <div class="LMPThresholdMsgLandTab">
+                        <div class="LMPThresholdMsgLandTabChild"></div>
+                    </div>
+                </div>
+                <table id="keypad" cellpadding="0" cellspacing="0" style='border-color:#BCC1C6;border-radius:1px;'>
+                    <tr class="keyBoardRow1">
+                        <td id="tabkey1" class="keyboardFirstStyle"><img src='styles/images/keyboardImages/cb_mob_01.png' height="55px" width="105px" />
+                        </td>
+                        <td id="tabkey2" class="keyboardSecondStyle"><img src='styles/images/keyboardImages/cb_mob_02.png' height="55px" width="111px" />
+                        </td>
+                        <td id="tabkey3" class="keyboardThirdStyle"><img src='styles/images/keyboardImages/cb_mob_03.png' height="55px" width="104px" />
+                        </td>
+                    </tr>
+                    <tr class="keyBoardRow2">
+                        <td id="tabkey4" class="keyboardFourthStyle"><img src='styles/images/keyboardImages/cb_mob_04.png' height="54px" width="105px" />
+                        </td>
+                        <td id="tabkey5" class="keyboardFifthStyle"><img src='styles/images/keyboardImages/cb_mob_05.png' height="54px" width="111px" />
+                        </td>
+                        <td id="tabkey6" class="keyboardSixthStyle"><img src='styles/images/keyboardImages/cb_mob_06.png' height="54px" width="104px" />
+                        </td>
+                    </tr>
+                    <tr class="keyBoardRow2">
+                        <td id="tabkey7" class="keyboardFourthStyle"><img src='styles/images/keyboardImages/cb_mob_07.png' height="54px" width="105px" />
+                        </td>
+                        <td id="tabkey8" class="keyboardFifthStyle"><img src='styles/images/keyboardImages/cb_mob_08.png' height="54px" width="111px" />
+                        </td>
+                        <td id="tabkey9" class="keyboardSixthStyle"><img src='styles/images/keyboardImages/cb_mob_09.png' height="54px" width="104px" />
+                        </td>
+                    </tr>
+                    <tr class="keyBoardRow3">
+                        <td id="tabkeyMinus" class="keyboardSeventhStyle"><img src='styles/images/keyboardImages/cb_mob_10.png' height="53px" width="105px" />
+                        </td>
+                        <td id="tabkey0" class="keyboardEigthStyle"><img src='styles/images/keyboardImages/cb_mob_11.png' height="53px" width="111px" />
+                        </td>
+                        <td id="tabkeyDelete" class="keyboardNinthStyle"><img src='styles/images/keyboardImages/cb_mob_12.png' height="53px" width="104px" />
+                        </td>
+                    </tr>
+                </table>
+                <div class="lastDivKeyboardcol1"></div>
+                <div class="lastDivKeyboardcol2"></div>
+                <div class="lastDivKeyboardcol3"></div>
+            </div>
+        </div>
+        
+        <!--  Landscape Mode More Latest Alerts view in tablet  -->
+        <div id='latestAlertsTabView' class='moreTabView moreTabDisplayState' style='overflow-y:scroll;'>
+            <div id='markTab' style='font-size:15px !important;text-align:right !important;background-color:#EBEDEE !important;padding-bottom:2px !important;'>
+               <a id='markAllAsReadAnchorTabId' data-click='markAllAsRead' data-role="button" style='border: none !important;vertical-align: top; padding-top: 2px !important;'>Mark all as read</a> 
+               <span style="color:black !important;font-size:20px !important;padding-bottom:2px !important;vertical-align: top;">|</span>
+               <a id='markAllAsUnreadAnchorTabId' data-click='markAllAsUnread' data-role="button" style='border: none !important;vertical-align: top;  padding-top: 2px !important;'>Mark all as unread</a>
+   			</div>
+            <ul id='latestAlertsTabULDiv' style="background-color:#FFFFFF;padding:0; margin:0;" data-click='latestAlertsULClick' data-role='listview'>
+            </ul>  
+            <div class="relative">
+                <div id='noAlertDivTab' class="absolute" style="display:none;font-size:20px !important;">No alerts</div>
+            </div>
+        </div>
+        
+        <!--  Landscape Mode More Alert Detail view in tablet  -->
+        <div id='alertDetailTabView' class='moreTabView moreTabDisplayState' style='overflow-y:scroll'>
+            <div id="alertDetailTabContainer"></div>
+        </div>
+        
+         <!--  Landscape Mode More EP Alerts view in tablet  -->
+         <div id="epAlertsTabView" class='moreTabView moreTabDisplayState' style='overflow-y:scroll'>
+             <div  class='moreBGAlertLand LMPText grayclass'>
+            </div>
+            <div  class='allowAlertsLandMoreTabMain mapdivclr'>
+                <div class="allowAlertsLandMoreTabSubDiv">
+                    Allow Alerts
+                </div>
+                <div class="switchDivClassLand" id="switchDiv" style="padding-top:5px;">
+                    <input id="epSwitchTab" type="checkbox" data-change="onEPAlertsTabChange" data-role="switch" />
+                </div>
+            </div>
+            <div class='epAlertTabTextSettings' >
+                   Turn Emergency Procedures alerts on or off.
+            </div>
+            <div id='optionsDivTab' class='grayclass' style='display:none'>
+                <div class='settingTabLand LMPText' style='margin-left: 6%; margin-right: 6%;padding-top:5px !important'>
+                    OPTIONS
+                </div>
+                <div id='epAreaDiv' class='zoneLMPTabBar mapdivclr'>
+                    <a data-role='button' class="zoneLMPHyperLandTab" data-click='areasTabDivClick'>
+                        <div class='zoneLMPTabLand textdiv'>
+                            Areas
+                        </div>
+                        <div id="areaSelectedDivLandTab" class="epAlertForwardLinkImg">
+                            <div style='font-family: HelveticaNeue;color: black !important;font-size: 17px;padding-top: 12px;'><span id="areaSelectedTextLandTab" style='padding-right:10px !important'></span>
+                                <img width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                            </div>
+                   		</div>
+                    </a>
+                </div>
+                
+                <div id="epTypeDiv" class='zoneLMPTabBar mapdivclr'>
+                    <a class='zoneLMPHyperLandTab' data-role='button' data-click='typesTabDivClick'>
+                        <div class='zoneLMPTabLand textdiv' style='width:57%;text-align:left'>
+                            Types
+                        </div>
+                        <div id="typeSelectedLandTabDiv" style='float:left;padding-right: 2%;text-align: right;width: 35%;font-family: HelveticaNeue;color: black !important;font-size: 17px;padding-top: 10px;' >
+                            <span id="typeSelectedTextLandTab"></span>
+                        </div>
+                        <div id='typesCountLandTabDivId' style='display:none;width:35%;float:left;'>
+                                <div id='typesCountLandTabBadgeId' class='epTypesSelectedCountBG' style='margin-left: 85% !important;'>
+                                    <div id='typesCountTextLandTabId' class='badgeCountText' style='padding-top: 2px !important;'><span></span></div>
+                                </div> 
+                        </div>
+                        <div style='float:right;padding-top:13px;margin-right:3%;text-align:right;width:2%'>
+                            <img width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+                    </a>
+                </div>
+                <div class='epAlertTabTextSettings' >
+                 	Select Areas and Types to receive specific desired alerts to your device.
+                </div>
+            </div>
+            <div id='includeDrillsDivTab' class='grayclass' style='display:none'>
+                <div  class='allowAlertsLandMoreTabMain mapdivclr'>
+                    <div class="allowAlertsLandMoreTabSubDiv">
+                        Include Drills
+                    </div>
+                    <div class="switchDivClassLand" id="alertswitchdiv" style="padding-top:5px;">
+                        <input id="includeDrillsSwitchTab" type="checkbox" data-change="onIncludeDrillsChange" data-role="switch" />
+                    </div>
+                </div>
+                <div class='epAlertTabTextSettings'>
+                       Receive messages issued as a part of an emergency procedures drill.
+                 </div>
+            </div>
+        </div>
+        <div id="epAreasTabView" class='moreTabView moreTabDisplayState' style='overflow-y:scroll'>
+                    <div class='moreBGAlertLand LMPText grayclass'>
+                    </div>
+                    <div class='mapdivclr doNotIncludeListTabLand'>
+                            <ul data-role="listview" id="areasNamesTab" class='notificationsLMPList'>
+                            </ul>
+                    </div> 
+                    <div id="epStateTextLandTab" class='epAlertTabTextSettings' style="padding-bottom: 0px !important;display:none">
+                         All emergency procedures events are issued by transmission zone, not by state. PJM Now state selections will include alerts for transmission zones located in multiple states.
+                    </div>
+                    <div id='selectRegionsDivTab' class='grayclass'>
+                        <div id='areaHeadingTab' class='settingTabLand LMPText' style='margin-left: 6%; margin-right: 6%;'>
+                            SELECT REGIONS/ZONES
+                        </div>
+                        <div class='mapdivclr doNotIncludeListTabLand'>
+                               <ul data-role="listview" id="areasCategoryTab" class='notificationsLMPList'>
+                               </ul>
+                        </div> 
+                    </div>
+        </div> 
+        <div id='regionsPopupTab' style='display:none;text-align:center;padding-top:5px;'></div>
+        
+        <div id="epTypesTabView" class='moreTabView moreTabDisplayState' style='overflow-y:scroll'>
+                    <div class='moreBGAlertLand LMPText grayclass'>
+                    </div>
+                    <div  class='allowAlertsLandMoreTabMain mapdivclr'>
+                            <div class="allowAlertsLandMoreTabSubDiv" id='allowAlertsLandMoreTabSubDivId'>
+                                <!--PAH Types Only -->
+                            </div>
+                            <div class="switchDivClassLand" id='pahTypeSwitchTabDiv' style="padding-top:5px;">
+                                <input id="pahSwitchTab" type="checkbox" data-change="onPAHTypeOnlySwitchChange" data-role="switch" />
+                            </div>
+                    </div>
+                    <div class='epAlertTabTextSettings' id='epAlertTabTextId' style="margin-right: 5%; !important;">
+                           <!--Selects only the emergency procedure types that can trigger a Performance Assessment Hour (PAH).-->
+                    </div>
+                    <div id='selectTypesDivTab' class='grayclass'>
+                            <div class='settingTabLand LMPText' style='margin-left: 6%; margin-right: 6%;padding-top:5px !important'>
+                                SELECT TYPES
+                            </div>
+                            <div class='mapdivclr doNotIncludeListTabLand'>
+                                <ul data-role="listview" id="allTypesULTab" class='notificationsLMPList'>
+                                </ul>
+                            </div> 
+                    </div>
+        </div>   
+        <div id="modaldialog_alertsTab" style="display:none">
+            <div class="feedbackHeading">
+                How do you like our new features?
+            </div>
+            <div class="feedbackContent">
+                Please provide us feedback so we can continue to improve PJM Now.
+            </div>
+            <div class="feedbackFooter">
+                <div id='Laterbtn_AlertsTab' class="feedbackFooterLater">
+                    <center style='margin-top:14px'>Later</center>
+                </div>
+                <div id='Okbtn_AlertsTab' class="feedbackFooterOk">
+                    <center style='margin-top:14px'>OK</center>
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="components/more/more.js" type="text/javascript"></script>
+</div>

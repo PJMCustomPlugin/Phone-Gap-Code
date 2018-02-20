@@ -1,0 +1,29 @@
+
+.epAlertSwitchDivAlign {
+    float:right !important;
+    margin-right:3%;
+    padding-top: 5.3px;
+}
+
+.epAlertsOptionsDiv{
+    margin-left:3%;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #7A838D;
+    font-size: 14px;
+    font-family: HelveticaNeue;
+}
+
+.epAlertForwardLinkImg{
+    float:right;
+    margin-right:3%;
+    text-align:right;
+}
+
+.epAlertTextSettings{
+    margin-left: 3%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: #7A838D;
+}
+

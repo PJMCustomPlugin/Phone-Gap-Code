@@ -1,0 +1,91 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "com.shazron.cordova.plugin.keychainutil": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "de.appplant.cordova.plugin.email-composer": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "net.yoik.cordova.plugins.screenorientation": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "uk.co.whiteoctober.cordova.appversion": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-3dtouch": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "com.phonegap.plugins.PushPlugin": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "com.brodysoft.sqlitePlugin": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "hu.dpal.phonegap.plugins.SpinnerDialog": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "org.apache.cordova.plugin.ActivityIndicator": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "com.telerik.cordovaPlatformSpecificFiles": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-badge": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-ios-longpress-fix": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-app-event": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.pjm.pjmnowva"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+<div id="epTypesView" data-role="view" data-title="Types" data-layout="pjm-default" style="visibility:visible !important;" data-before-show="EPTypesInitMethod" >
+    <link href="components/more/alerts/epAlerts/epTypes/epTypes.css" rel="stylesheet" />
+    <script src="components/more/alerts/epAlerts/epTypes/epTypes.js" type="text/javascript"></script>
+    <div data-role="header">
+        <div data-role="navbar">
+            <a id='backToEPFromTypes' data-click='backToEPAlertsFromTypes' data-role="button" data-align="left" data-icon="leftArrow" style="font-size:1.0em !important;">
+                <span style="display:block;width:95px;margin-top: -8px !important">
+                    <span>Emergency</span><span style="display: block;line-height: 0.8;margin-top: 2px !important">Procedures</span>
+                </span>
+            </a>
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <div class='grayclass alertBGHeight'>
+        <div class="alertBGSubDiv"></div>
+    </div>
+    <div class='mapdivclr allowAlertsMainDiv'>
+        <div class="allowAlertsSubDiv" id='allowAlertsSubDivId'>
+            <!--PAH Types Only-->
+        </div>
+        <div id='pahTypeSwitchDiv' class="epAlertSwitchDivAlign">
+            <input id="pahSwitch" type="checkbox" data-change="onPAHTypeOnlySwitchChange" data-role="switch" />
+        </div>
+    </div>
+     <div class='epAlertTextSettings' id='epAlertTextId'>
+           <!--Selects only the emergency procedure types that can trigger a Performance Assessment Hour (PAH).-->
+    </div>
+  
+     <div id='optionsDiv' class='grayclass'>
+        <div class='epAlertsOptionsDiv'>
+            SELECT TYPES
+        </div>
+        <ul data-role="listview" id="allTypesUL" class='mapdivclr'>
+        </ul>
+    </div>
+    
+</div>

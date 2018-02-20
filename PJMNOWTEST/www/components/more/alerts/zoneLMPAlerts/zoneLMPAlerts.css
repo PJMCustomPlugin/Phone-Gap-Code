@@ -1,0 +1,64 @@
+ .km-content {
+     background-color: #EBEDEE !important;
+ }
+ #notificationView {
+     background-color: #EBEDEE !important;
+ }
+ .LMPText {
+     color: #7A838D;
+     font-size: 14px;
+     font-family: HelveticaNeue;
+ }
+ .LMPsmallText {
+     color: #7A838D;
+     font-size: 13px;
+     font-family: HelveticaNeue;
+ }
+ .LMPValueText {
+     color: #7A838D;
+     font-size: 24px;
+     font-family: HelveticaNeue-Bold;
+ }
+ .km-ios7 span.km-switch {
+     color: #4cda64 !important;
+ }
+ .grayClass {
+     background-color: #EBEDEE !important;
+ } 
+ .km-listview-link:after {
+     visibility: hidden;
+ }
+ .km-android .km-list {
+     margin-bottom: 0px !important;
+ }
+ .notificationDiv:active {
+     background-color: #5597C6 !important;
+     color: #FFF !important;
+ }
+ .notificationDiv {
+     color: #000;
+ }
+ .includeDiv {
+     color: #000;
+ }
+ .includeDiv:active {
+     background-color: #5597C6 !important;
+     color: #FFF !important;
+ }
+.doNotIncludeClass {
+    height:40px;
+}
+.includeNoneClass {
+    margin-left:5%;
+    padding-top:13px;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;   
+}
+.excludeNoneClass {
+    margin-left:3%;
+    padding-top:13px;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;
+}

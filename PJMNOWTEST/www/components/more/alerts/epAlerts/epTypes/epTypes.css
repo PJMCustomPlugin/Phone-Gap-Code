@@ -1,0 +1,21 @@
+.km-list input[type=checkbox] {
+    position: initial;
+    padding-right: 20px !important;
+}
+.km-list span {
+    background-color: red !important;
+}
+
+.km-list > li {
+    height:  auto !important;
+}
+
+.km-ios7 .km-list>li {
+    border-image: none !important;
+}
+
+.disabled {
+    pointer-events:none; 
+    opacity:0.6;         
+}
+

@@ -1,0 +1,43 @@
+<div data-role="view" id="controlAreas" data-title="Control Areas" data-layout="pjm-default" data-elastic="false" data-init="initPullToRefreshForControl" style="visibility:visible !important;">
+    <script src="components/controlAreas/controlAreas.js"></script>
+    <link href="components/controlAreas/controlAreas.css" rel="stylesheet" />
+    <div data-role="header">
+        <div data-role="navbar">
+            <a data-role='button' data-align='left' class='bc-lef' href='#netTie' data-click="controlAreasLock" data-transition="slide:right" data-icon="leftArrow">Tie Flows </a>
+            <span data-role="view-title" class="zone-lmp-tit">Control Areas</span>
+            <a id='areasEditbtn' data-role="button" data-align="right">Edit</a>
+            <a id='areasDonebtn' data-role="button" data-align="right" style="display:none">Done</a>
+        </div>
+    </div>
+    <div id='controlAreasWhite' class='mapdivclr'>
+        <div class="divbg">
+            <center id='updateImg_Areas' style="display:none;padding-bottom:25px;">
+                <div><img id='rotatingImg_Areas' src='styles/images/rotate.png' height='25px' />
+                </div>
+                <span>Updating</span>
+            </center>
+            <div id="areasRefreshDiv" class="clearWhite">
+                <div class='datediv' id="lastUpdatedTieFlowsDate"></div>
+                <div class='tieFlowText'>
+                    Shown in MW
+                </div>
+                <div id="maincontainer">
+                    <div class="ParentHeader">
+                        <div class="areaClass">Area</div>
+                        <div class="actualClass setWidth_actual">Actual</div>
+                        <div class="scheduledClass setWidth_scheduled">Scheduled</div>
+                        <div class="setWidth_loop loopFlowClass">Loop Flow</div>
+                    </div>
+                    <div class="sortableAreaswidthClass">
+                        <ul id="sortableAreas" class='sortableAreasList' style="overflow-y:scroll;">
+                        </ul>
+                    </div>
+                    <div class="setPadding verticalTextWidth" id="PJM_RTO_text">
+                        <div class="PJM-RTO-vertical-text">PJM RTO</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="components/controlAreas/controlAreasRuntTime.js"></script>

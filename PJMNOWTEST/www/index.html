@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles/footer.css" rel="stylesheet" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="kendo/styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="kendo/styles/kendo.default.min.css" />
+    <link href="styles/common.css" rel="stylesheet" />
+    <script src="components/utilities/3dTouchService.js" type="text/javascript"></script>
+    <link href="components/zoneLMPMap/zoneLMPMap.css" rel="stylesheet" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+   	<script src="scripts/jquery-ui.js"></script>
+    <script src="components/utilities/appService.js" type="text/javascript"></script>
+    <script src="components/utilities/badgeService.js" type="text/javascript"></script>
+    <script src="scripts/index.js"></script>
+    <script src="components/utilities/pushNotificationService.js" type="text/javascript"></script>
+    <script src="components/utilities/alertsService.js" type="text/javascript"></script>
+    <script src="components/utilities/navigationService.js" type="text/javascript"></script>
+    <script src="components/utilities/deviceModel.js" type="text/javascript"></script>
+    <script src="scripts/appInit.js"></script>
+    <script src="components/utilities/messageEncoder.js" type="text/javascript"></script>
+    <script src="components/utilities/servicesModel.js" type="text/javascript"></script>
+    <script src="components/utilities/dbConnection.js" type="text/javascript"></script>
+    <script src="components/utilities/dbModelZone.js" type="text/javascript"></script>
+    <script src="components/utilities/dbModelZoneTrend.js" type="text/javascript"></script>
+    <script src="components/utilities/dbModelAnalytics.js" type="text/javascript"></script>
+    <script src="components/utilities/dbModelEmergencyProcedure.js" type="text/javascript"></script>
+    <script src="components/zoneLMPMap/ZonePoints.min.js" type="text/javascript"></script>
+    <script src="components/zoneLMPMap/orientationMap.js" type="text/javascript"></script>
+    
+</head>
+<body>
+   <div data-role="layout" data-id="pjm-default">
+        <header data-role="header" data-id="pjm-default-header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </header>
+        <!-- application views will be rendered here -->
+        <div data-role="footer">
+            <div data-role="tabstrip" data-id="pjm-tabstrip" data-select="onSelect">
+                <a data-icon="readAlerts">Alerts</a>
+                <a data-icon="zoneLMP">Zone LMP</a>
+                <a data-icon="demand">Demand</a>
+                <a data-icon="tieFlows">Tie Flows</a>
+                <!--<a data-icon="moreCus">More</a>-->
+                <a id="moreNavLink" data-icon="moreCus">More</a>
+            </div>
+        </div>
+   </div>
+   <script src="components/utilities/dbModelDemand.js" type="text/javascript"></script>
+   <script src="components/utilities/dbModelTie.js" type="text/javascript"></script>
+   <script src="components/utilities/dbModelAllRegionsDemand.js" type="text/javascript"></script>
+   <script src="components/utilities/dbModelOperationalReserves.js" type="text/javascript"></script>
+   <script src="components/utilities/dbModelDispatchedReserves.js" type="text/javascript"></script>
+   <script src="scripts/jquery.ui.touch-punch.min.js"></script>
+   <script src="scripts/Raphael.js" type="text/javascript"></script>
+   <script src="scripts/highcharts.js"></script>
+   <script src="scripts/drilldown.js"></script>
+   <script src="scripts/exporting.js"></script>   
+</body>  
+</html>

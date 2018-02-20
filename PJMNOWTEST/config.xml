@@ -1,0 +1,177 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.pjm.pjmnowva" version="1.0.0" 
+    xmlns="http://www.w3.org/ns/widgets" 
+    xmlns:gap="http://phonegap.com/ns/1.0"
+    xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>PJMNowTest</name>
+    <description>
+     View PJM real-time power prices, track grid conditions and get alerts. 
+    </description>
+    <author email="PJM Interconnection" href="">
+     PJM Interconnection 
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+   <!--  <icon src="res/icon.png" /> -->
+   <preference name="TopActivityIndicator" value="white" />
+    <preference name="SplashScreenSpinnerColor" value="DarkRed"/>
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="true"/>
+    <preference name="FadeSplashScreen" value="false"/>
+    <preference name="splashscreen" value="splash" />
+    <platform name="android">
+        <preference name="AndroidPersistentFileLocation" value="Internal" />
+        <allow-intent href="market:*" />
+
+        <splash src="res/screen/android/splash-port-ldpi.png" platform="android" qualifier="port-ldpi" />
+        <splash src="res/screen/android/splash-land-ldpi.png" platform="android" qualifier="land-ldpi" />
+        <splash src="res/screen/android/splash-port-mdpi.png" platform="android" qualifier="port-mdpi" />
+        <splash src="res/screen/android/splash-land-mdpi.png" platform="android" qualifier="land-mdpi" />
+        <splash src="res/screen/android/splash-port-hdpi.png" platform="android" qualifier="port-hdpi" />
+        <splash src="res/screen/android/splash-land-hdpi.png" platform="android" qualifier="land-hdpi" />
+        <splash src="res/screen/android/splash-port-xhdpi.png" platform="android" qualifier="port-xhdpi" />
+        <splash src="res/screen/android/splash-land-xhdpi.png" platform="android" qualifier="land-xhdpi" />
+        <splash src="res/screen/android/splash-port-xxhdpi.png" platform="android" qualifier="port-xxhdpi" />
+        <splash src="res/screen/android/splash-land-xxhdpi.png" platform="android" qualifier="land-xxhdpi" />
+        <splash src="res/screen/android/splash-port-xxxhdpi.png" platform="android" qualifier="port-xxxhdpi" />
+        <splash src="res/screen/android/splash-land-xxxhdpi.png" platform="android" qualifier="land-xxxhdpi" />
+
+        <icon src="res/icon/android/ldpi.png" platform="android" qualifier="ldpi" />
+        <icon src="res/icon/android/mdpi.png" platform="android" qualifier="mdpi" />
+        <icon src="res/icon/android/hdpi.png" platform="android" qualifier="hdpi" />
+        <icon src="res/icon/android/xhdpi.png" platform="android" qualifier="xhdpi" />
+        <icon src="res/icon/android/xxhdpi.png" platform="android" qualifier="xxhdpi" />
+        <icon src="res/icon/android/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+
+        <feature name="Whitelist">
+            <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+            <param name="onload" value="true" />
+        </feature>
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <preference name="AllowInlineMediaPlayback" value="false" />
+        <preference name="iosPersistentFileLocation" value="Library" />
+        <preference name="BackupWebStorage" value="cloud" />
+        <preference name="DisallowOverscroll" value="false" />
+        <preference name="EnableViewportScale" value="false" />
+        <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+        <preference name="MediaPlaybackRequiresUserAction" value="false" />
+        <preference name="SuppressesIncrementalRendering" value="false" />
+        <preference name="GapBetweenPages" value="0" />
+        <preference name="PageLength" value="0" />
+        <preference name="PaginationBreakingMode" value="page" />
+        <preference name="PaginationMode" value="unpaginated" />
+        <!-- <preference name="TopActivityIndicator" value="white" />
+ -->
+        <!-- iPhone and iPod touch -->
+        <splash height="480" src="res/screen/ios/Default_iphone_320_480.png" width="320" />
+        <splash height="960" src="res/screen/ios/Default@2x_iphone_640_960.png" width="640" />
+
+        <!-- iPad -->
+        <splash height="1024" src="res/screen/ios/Default-Portrait_ipad_768_1024.png" width="768" />
+        <splash height="768" src="res/screen/ios/Default-Landscape_ipad_1024_768.png" width="1024" />
+
+        <!-- Retina iPad -->
+        <splash height="2048" src="res/screen/ios/Default-Portrait@2x_ipad_1536_2048.png" width="1536" />
+        <splash height="1536" src="res/screen/ios/Default-Landscape@2x_ipad_2048_1536.png" width="2048" />
+
+        <!-- iPhone 5 / iPod Touch (5th Generation) -->
+        <splash height="1136" src="res/screen/ios/Default-568h@2x_iphone_640_1136.png" width="640" />
+
+        <!-- iPhone 6 -->
+        <splash height="1334" src="res/screen/ios/Default-667h_750_1334.png" width="750" />
+        <splash height="2208" src="res/screen/ios/Default-736h_1242_2208.png" width="1242" />
+        <splash height="1242" src="res/screen/ios/Default@3x_iphone_2208_1242.png" width="2208" />
+
+        <splash height="750" src="res/screen/ios/Default@2x_iphone_1334_750.png" width="1334" />
+        <splash height="2732" src="res/screen/ios/Default@2x_ipad_2732_2732.png" width="2732" />
+        <splash height="2732" src="res/screen/ios/Default@2x_ipad_1278_2732.png" width="1278" />
+        <splash height="1334" src="res/screen/ios/Default@2x_iphone_1334_1334.png" width="1334" />
+        <splash height="2208" src="res/screen/ios/Default@3x_iphone_2208_2208.png" width="2208" />
+
+        <!-- 
+        <splash height="1334" src="res/screen/ios/Default@2x_iphone_750_1334.png" width="750" />
+        <splash height="2208" src="res/screen/ios/Default@3x_iphone_1242_2208.png" width="1242" />
+        <icon height="40" src="res/icon/ios/Icon-Small@2x.png" width="40" />
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="228" src="res/icon/ios/Icon-App-76x76@3x.png" width="228" />
+        -->
+
+        <!-- IOS 7.0+ -->
+
+        <!-- Settings Icon -->
+        <icon height="29" src="res/icon/ios/icon-small_29x29.png" width="29" />
+        <icon height="58" src="res/icon/ios/icon-small@2x.png" width="58" />
+        <icon height="87" src="res/icon/ios/icon-small@3x.png" width="87" />
+
+        <!-- Spotlight Icon -->
+        <icon height="40" src="res/icon/ios/icon-small-40.png" width="40" />
+        <icon height="80" src="res/icon/ios/icon-small-40@2x.png" width="80" />
+        <icon height="120" src="res/icon/ios/icon-small-40@3x.png" width="120" />
+
+        <!-- iPhone / iPod Touch  -->
+        <icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+        <icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+
+        <!-- iPhone 6 / 6+ -->
+        <icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+
+        <!-- iPad -->
+        <icon height="76" src="res/icon/ios/icon-76.png" width="76" />
+        <icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+        <icon height="167" src="res/icon/ios/icon-83.5@2x.png" width="167" />
+
+        <!-- IOS 6.1 -->
+        
+        <!-- iPhone / iPod Touch -->
+        <icon height="57" src="res/icon/ios/icon_57x57.png" width="57" />
+        <icon height="114" src="res/icon/ios/icon@2x_114x114.png" width="114" />
+
+        <!-- iPad -->
+        <icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+        <icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+
+        <!-- iPad Spotlight and Settings Icon -->
+        <icon height="50" src="res/icon/ios/icon-small-50.png" width="50" />
+        <icon height="100" src="res/icon/ios/icon-small-50@2x.png" width="100" />
+
+        <icon height="167" src="res/icon/ios/icon-167.png" width="167" />
+        <icon height="1024" src="res/icon/ios/icon-1024.png" width="1024" />
+        
+        <feature name="LocalStorage">
+            <param name="ios-package" value="CDVLocalStorage" />
+        </feature>
+    </platform>
+
+    <plugin name="cordova-plugin-device" spec="~2.0.1" />
+    <plugin name="cordova-plugin-device-motion" spec="~1.2.5" />
+    <plugin name="cordova-plugin-dialogs" spec="~2.0.1" />
+    <plugin name="cordova-plugin-inappbrowser" spec="~2.0.1" />
+    <plugin name="cordova-plugin-network-information" spec="~2.0.1" />
+    <plugin name="cordova-plugin-statusbar" spec="~2.2.2-dev" />
+    <plugin name="cordova-plugin-vibration" spec="~2.1.3" />
+    <plugin name="cordova-plugin-whitelist" spec="~1.3.1" />
+    <plugin name="cordova-plugin-screen-orientation" spec="https://github.com/Telerik-Verified-Plugins/ScreenOrientation.git" />
+    <plugin name="AppVersion" spec="https://github.com/Telerik-Verified-Plugins/AppVersion.git" />
+   <plugin name="cordova-plugin-file" spec="~4.3.3" />
+   <plugin name="cordova-plugin-compat" spec="~1.2.0" />
+   <plugin name="cordova-plugin-email-composer" spec="https://github.com/Telerik-Verified-Plugins/EmailComposer.git" />
+    <plugin name="PushNotification" spec="https://github.com/orcasgit/PushNotification.git" />
+    <plugin name="sqlite-1-1-0" spec="https://github.com/PJMCustomPlugin/sqlite-1-1-0.git" />
+    <plugin name="SpinnerDialog" spec="https://github.com/Paldom/SpinnerDialog.git" />
+    <plugin name="cordova-activityindicator" spec="https://github.com/Crypho/cordova-activityindicator.git" />
+    <plugin name="cordova-plugin-badge" spec="~0.7.4" />
+    <plugin name="cordova-plugin-device-orientation" spec="https://github.com/PJMCustomPlugin/cordova-plugin-device-orientation-r1.0.0.git" />
+    <plugin name="cordova-plugin-media" spec="~1.0.0" />
+    <plugin name="cordova-plugin-splashscreen" spec="~3.2.0" />
+    <plugin name="cordova-plugin-ios-longpress-fix" spec="~1.1.0" />
+    <plugin name="cordova-plugin-ios-keychain" spec="https://github.com/Telerik-Verified-Plugins/Keychain.git" />
+</widget>

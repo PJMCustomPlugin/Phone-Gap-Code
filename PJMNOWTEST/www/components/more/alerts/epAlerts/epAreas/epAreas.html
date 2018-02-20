@@ -1,0 +1,32 @@
+<div id="epAreasView" data-role="view" data-title="Areas" data-layout="pjm-default" style="visibility:visible !important;" data-before-show="EPAreasInitMethod" >
+    <link href="components/more/alerts/epAlerts/epAreas/epAreas.css" rel="stylesheet" />
+    <script src="components/more/alerts/epAlerts/epAreas/epAreas.js" type="text/javascript"></script>
+    <div data-role="header">
+        <div data-role="navbar">
+            <a id='backToEP' data-click='backToEPAlerts' data-role="button" data-align="left" data-icon="leftArrow" style="font-size:1.0em !important;">
+                <span style="display:block;width:95px;margin-top: -8px !important">
+                    <span>Emergency</span><span style="display: block;line-height: 0.8;margin-top: 2px !important">Procedures</span>
+                </span>
+            </a>
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <div class='grayClass alertBGHeight'>
+        <div class="alertBGSubDiv"></div>
+    </div>
+    <ul data-role="listview" id="areasNames" class='mapdivclr'>
+    </ul>
+    
+    <div id="epStateText" class='epAlertTextSettings' style="padding-bottom: 0px !important;display:none">
+        All emergency procedures events are issued by transmission zone, not by state. PJM Now state selections will include alerts for transmission zones located in multiple states.
+    </div>
+    
+    <div id='selectRegionsDiv' class='grayClass'>
+        <div id='areaHeading' class='LMPSmallTextPhone alertsSettingDiv'>
+            SELECT REGIONS/ZONES
+        </div>
+        <ul data-role="listview" id="areasCategory" class='mapdivclr'>
+        </ul>
+    </div>
+    <div id='regionsPopup' style='display:none;text-align:center !important;padding-top:5px;width:100%;height:100%;'></div>
+</div>

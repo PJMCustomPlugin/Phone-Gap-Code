@@ -1,0 +1,120 @@
+#sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sortable li {
+    padding-left: 2% !important;
+    padding-top: 1em !important;
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #BCC1C6;
+    list-style-position: inside;
+}
+#sortable li:first-child {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #BCC1C6;
+    list-style-position: inside;
+}
+#sortableTablate {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#sortableTablate li {
+    padding: 1em;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #BCC1C6;
+    list-style-position: inside;
+   
+}
+#sortableTablate li:first-child {
+    padding: 1em;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #BCC1C6;
+    list-style-position: inside;
+}
+.bc-lef {
+    text-decoration: none;
+    color: #3C8EC8;
+}
+.bc-rt {
+    float: right;
+    width: 30%;
+    color: #3C8EC8
+}
+#tPar {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black
+}
+.zone-lmp-tit {
+    font-size: 1.1em;
+    padding-left: 0%
+}
+.final2 {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+}
+.final3 {
+    float: left;
+    width: 35%
+}
+
+
+.zone-hub {
+    font-family: HelveticaNeue-Medium,sans-serif-medium,Roboto-Medium;
+    float: left;
+    font-size: 14pt;
+    width: 60%;
+    padding-left: 2%;
+   
+}
+.lmp-mw {
+    font-family: HelveticaNeue-Medium,sans-serif-medium,Roboto-Medium;
+    float: left;
+    font-size: 14pt;
+    width: 40%;
+    padding-right: 2%;
+    
+    
+    text-align: right;
+}
+.list-body {
+    width: 100%;
+    height: 55px;
+    border-bottom: 1px solid #000000;
+}
+.zone-lmp-name {
+    font-family: HelveticaNeue-Light,sans-serif-light,Roboto-Light;
+    float: left;
+    font-size: 16pt;
+    width: 50%;
+    margin-top: 0px;
+    padding-left: 0%;
+    margin-top: -1.5%;
+    color: black;
+}
+.lmp-mw-val {
+    font-family: HelveticaNeue,sans-serif,Roboto regular;
+    float: left;
+    font-size: 16pt;
+    width: 50%;
+    text-align: right;
+    padding-top: 0px;
+    /*padding-right: 1%;*/
+    margin-top: -2%;
+    color: black;
+}
+.reordering {
+    width: 30px;
+    height: 10px;
+    margin-left: 20px;
+}
+
+.km-ios7 .km-list>li {
+    border-image: none !important;
+}

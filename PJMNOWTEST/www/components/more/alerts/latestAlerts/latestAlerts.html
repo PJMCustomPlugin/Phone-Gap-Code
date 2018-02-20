@@ -1,0 +1,35 @@
+<div id="latestAlerts"  data-init="latestAlertsInit" data-role="view" data-title="Latest Alerts and Messages" data-layout="pjm-default" style="visibility:visible !important;" data-before-show="clearBadgeCount">
+   <link href="components/more/alerts/latestAlerts/latestAlerts.css" rel="stylesheet" />
+   <script src="components/more/alerts/latestAlerts/latestAlerts.js" type="text/javascript"></script>
+    <header data-role="header">
+        <div data-role="navbar">
+             <a data-click='navigateFromLatestAlertsToAlerts' href="components/more/alerts/alerts.html" class="bc-more" data-role="button" data-align="left" data-icon="leftArrow" data-transition="slide:right">Alerts</a>
+             <span data-role="view-title"></span>
+        </div>
+    </header>
+    <script>
+        setTimeout(function () {
+            if (device.platform == 'android' || device.platform == 'Android') {
+                ActivityIndicator.hide();
+            }
+            navigator.splashscreen.hide();
+            try {
+                statusBarChanges();
+            } catch (error) {}
+        }, 10);
+    </script>
+    <div id='wrapper'>
+        <div id='mark' style='font-size:15px !important; text-align:right !important;background-color:#EBEDEE !important;padding-bottom:2px !important;width:100%;'>
+               <div id='markAllAsReadAnchorId' data-click='markAllAsRead' data-role="button" style='border: none !important;vertical-align: top;  padding-top: 2px !important; '>Mark all as read</div> 
+               <span style="color:black !important;font-size:20px !important;padding-bottom:2px !important;vertical-align: top;">|</span>
+               <div id='markAllAsUnreadAnchorId' data-click='markAllAsUnread' data-role="button" style='border: none !important;vertical-align: top; padding-top: 2px !important;' >Mark all as unread</div>
+   	    </div>
+         <div id="latestAlertsContainer" style="width:100%;">
+              <ul id='latestAlertsDiv' style="background-color:#FFFFFF;padding:0; margin:0;" data-click='clickOnAlert' data-role='listview'>
+              </ul>
+         </div>
+       <div class="relative">
+         <div id='noAlertDiv' class="absolute" style="display:none;font-size:20px !important;">No alerts</div>
+       </div>
+    </div>
+</div>

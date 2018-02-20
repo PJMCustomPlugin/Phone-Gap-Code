@@ -1,0 +1,28 @@
+<div id="notificationView" data-role="view" data-title="Zone LMP" data-layout="pjm-default" style="visibility:visible !important;" data-elastic="false" data-before-show="zoneLMPAlertsInit">
+    <link href="components/more/alerts/zoneLMPAlerts/zoneLMPAlerts.css" rel="stylesheet" />
+    <div data-role="header">
+        <div data-role="navbar">
+            <a href="#alertView" data-role="button" data-align="left" class="bc-more" data-transition="slide:right" data-click='navigateFromZoneLMPAlertsToAlerts' data-icon="leftArrow">Alerts</a>
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <div class='LMPText grayClass doNotIncludeClass'>
+        <div class='LMPTextdiv' style='padding-top:13px;'>INCLUDE</div>
+    </div>
+    <div class='mapdivclr'>
+        <ul data-role="listview" data-click='setPhoneZoneLMPTitle' id="notificationsIncludeLMPList" class='notificationLMPList'></ul>
+        <div id='includeNone' style='height:40px;display:none'>
+            <div class="includeNoneClass">None</div>
+        </div>
+    </div>
+    <div class='LMPText grayClass doNotIncludeClass'>
+        <div class='LMPTextdiv' style='padding-top:13px;'>DO NOT INCLUDE</div>
+    </div>
+    <div class='mapdivclr'>
+        <ul data-role="listview" data-click='setPhoneZoneLMPTitle' id="notificationsExcludeLMPList" class='notificationLMPList'></ul>
+        <div id='excludeNone' style='height:40px;display:none'>
+            <div class="excludeNoneClass">None</div>
+        </div>
+    </div>
+    <script src="components/more/alerts/zoneLMPAlerts/zoneLMPAlerts.js"></script>
+</div>

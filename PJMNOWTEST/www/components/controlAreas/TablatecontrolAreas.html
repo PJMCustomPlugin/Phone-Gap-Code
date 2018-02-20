@@ -1,0 +1,31 @@
+<div data-role="view" id="controlAreas" data-layout="pjm-default" style="visibility:visible !important;">
+    <link href="components/controlAreas/tablateControlAreas.css" rel="stylesheet" />
+    <div data-role="header">
+        <div data-role="navbar">
+            <div class="tablateMainHeadingCA">
+                <a id='edit_btn' data-role="button" data-align="right" class="tablateCAEdit">Edit</a>
+                <a id='done_btn' data-role="button" data-align="right" class="tablateCADone">Done</a>
+                <div data-role="view-title" class="zone-lmp-tit tablateCAHeading">Control Areas
+                    <br/><span class='tieFlowTextTab tablateCASubHeading'>Shown in MW</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="maincontainer_tab_CA" class="mainContainerTablate">
+        <div class="subMainContainerTablate">
+            <div class="tablateCAAreaClass">Area</div>
+            <div class="tablateCAActualClass">Actual</div>
+            <div class="tablateScheduledClass">Scheduled</div>
+            <div class="androidLoopFlow tablateLoopFlowClass">Loop Flow</div>
+        </div>
+        <div class="sortableAreasTabHeading">
+            <ul id="sortableAreas_tab" class='sortableAreasList_tab' style="overflow-y:scroll;">
+            </ul>
+        </div>
+        <div class="verticalTextWidth_tab">
+            <div class="vertical-text-tab">PJM RTO</div>
+        </div>
+    </div>
+</div>
+<script src="components/controlAreas/tablateControlAreas.js"></script>
+<script src="components/controlAreas/controlAreas.js"></script>

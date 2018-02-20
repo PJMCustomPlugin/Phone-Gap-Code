@@ -1,0 +1,134 @@
+ /*----Footer images changes------*/
+        /*---Zone LMP image custmization for footer*/
+        
+		/*span.km-text {
+            padding-right: 5px;
+        }*/
+         .km-footer span.km-text {
+    			padding-right: 5px;
+	    }
+        
+        .km-root .km-tabstrip .km-icon.km-readAlerts::after {
+            background-image: url("images/homePageImages/icon_alerts_unselected_state.png") !important;
+            background-size: 100% 100% !important;
+        }
+        .km-root .km-tabstrip .km-button.km-state-active .km-icon.km-readAlerts::after {
+            background-image: url("images/homePageImages/alerts_icon_selected_state.png") !important;
+            background-size: 100% 100% !important;
+        }
+        
+        /*.km-root .km-tabstrip .km-icon.km-unreadAlerts::after {
+            font-size: 18px;
+            display: inline-block;
+            height: 100%;
+            text-align: center;
+            color: white;
+            border-top: 6px solid transparent;
+            background-clip: border-box;
+            background-origin: border-box;
+            background-position: 0 0px;
+            background-image: url("images/homePageImages/02.png") !important; 
+            background-repeat : no-repeat;
+            background-size: 100% 86% !important;
+        }*/
+        .km-root .km-tabstrip .km-icon.km-unreadAlerts::after {
+            
+            font-size: 18px;
+            display: inline-block;
+            height: 100%;
+            text-align: center;
+            color: white;
+            border-top: 7px solid transparent;
+            background-clip: border-box;
+            background-origin: border-box;
+            background-position: 0 0px;
+            background: url("images/homePageImages/02.png") no-repeat -0.3px -7.5px !important; 
+            background-size: 100% 100% !important;
+        }
+
+        .km-root .km-tabstrip .km-icon.km-unreadAlertsAndroid::after {
+            font-size: 18px;
+            display: inline-block;
+            height: 100%;
+            text-align: center;
+            color: white;
+            border-top: 7px solid transparent;
+            background-clip: border-box;
+            background-origin: border-box;
+            background: url("images/homePageImages/02.png") no-repeat -0.3px -8px !important; 
+            background-size: 100% 100% !important;
+        }
+        .km-root .km-tabstrip .km-icon.km-unreadAlertsTwoDigitCount::after {
+            font-size: 18px;
+            display: inline-block;
+            height: 86%;
+            text-align: center;
+            color: white;
+            border-top: 7px solid transparent;
+            background-clip: border-box;
+            background-origin: border-box;
+            background: url("images/homePageImages/icon_unread_alerts_greater_than_one_digit.png") no-repeat 1px -5.5px !important; 
+            background-size: 98% 100% !important;
+        }
+        .km-root .km-tabstrip .km-icon.km-unreadAlertsTwoDigitCountAndroid::after {
+            font-size: 18px;
+            display: inline-block;
+            height: 90%;
+            text-align: center;
+            color: white;
+            border-top: 7px solid transparent;
+            background-clip: border-box;
+            background-origin: border-box;
+            background: url("images/homePageImages/icon_unread_alerts_greater_than_one_digit.png") no-repeat 0.5px -4.5px !important; 
+            background-size: 98% 90% !important;
+        }
+
+        .km-root .km-tabstrip .km-icon.km-zoneLMP::after {
+            background-image: url("images/homePageImages/tabicon1-hover.png") !important;
+            background-size: 100% 100% !important;
+        }
+        .km-root .km-tabstrip .km-button.km-state-active .km-icon.km-zoneLMP::after {
+            background-image: url("images/homePageImages/tabicon1-Normal.png") !important;
+            background-size: 100% 100% !important;
+        }
+        /*---Demand image custmization for footer*/
+        
+        .km-root .km-tabstrip .km-icon.km-demand::after {
+            background-image: url("images/homePageImages/tabicon2-hover.png") !important;
+            background-size: 100% 100% !important;
+        }
+        .km-root .km-tabstrip .km-button.km-state-active .km-icon.km-demand::after {
+            background-image: url("images/homePageImages/tabicon2-Normal.png") !important;
+            background-size: 100% 100% !important;
+        }
+        /*---Tie Flows image custmization for footer*/
+        
+        .km-root .km-tabstrip .km-icon.km-tieFlows::after {
+            background-image: url("images/homePageImages/tabicon3-hover.png") !important;
+            background-size: 100% 100% !important;
+        }
+        .km-root .km-tabstrip .km-button.km-state-active .km-icon.km-tieFlows::after {
+            background-image: url("images/homePageImages/tabicon3-Normal.png") !important;
+            background-size: 100% 100% !important;
+        }
+        /*---More image custmization for footer*/
+        
+        .km-root .km-tabstrip .km-button .km-icon.km-moreCus::after {
+            background-image: url("images/homePageImages/tabicon4-hover.png") !important;
+            background-size: 100% 100% !important;
+        }
+        .km-root .km-tabstrip .km-button.km-state-active .km-icon.km-moreCus::after {
+            background-image: url("images/homePageImages/tabicon4-Normal.png") !important;
+            background-size: 100% 100% !important;
+        }
+
+.loader {
+           width:100%;
+           height:100%;
+           background-image: url("img/spiffygif.gif");
+           background-position: center;
+           background-repeat: no-repeat;
+           margin: auto;
+ 		 	position: absolute;
+  			top: 0; left: 0; bottom: 0; right: 0;
+       }

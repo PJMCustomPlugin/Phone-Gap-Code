@@ -1,0 +1,107 @@
+html,
+body {
+    max-width: 100%;
+    overflow-y: hidden;
+}
+.overlay {
+    font-size: 24px;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    text-align: center;
+}
+h1 {
+    background: #26466D;
+    border-radius: 2px;
+    font-size: 14px;
+    margin: 0px;
+    padding: 10px 8px;
+    width: 215px;
+}
+.scheduled_phone {
+    font-size: 12px;
+    font-family: HelveticaNeue-Medium;
+}
+.scheduled_tablet {
+    font-size: 16px;
+    font-family: HelveticaNeue-Medium;
+}
+.imports_phone {
+    font-size: 14px;
+    font-family: HelveticaNeue;
+}
+.imports_tablet {
+    font-size: 24px;
+    font-family: HelveticaNeue;
+}
+.schValues_phone {
+    font-size: 14px;
+    font-family: HelveticaNeue-Bold;
+}
+.schValues_tablet {
+    font-size: 24px;
+    font-family: HelveticaNeue-Bold;
+}
+.tieFlowText {
+    color: #7A848D;
+    font-family: HelveticaNeue;
+    font-size: 11pt;
+    padding-left: 2% !important;
+}
+.km-ios7 .km-view-title {
+    font-family: HelveticaNeue-Medium;
+    font-size: 17px;
+    color: black;
+    font-weight: normal;
+    line-height: 2.5em;
+}
+#pjmData {
+    bottom: 120px;
+    position: absolute;
+    width: 100%;
+    color:black;
+}
+.control {
+    font-size: 12px !important;
+    display: inline-block !important;
+}
+.km-ios7 .km-scroller-pull.km-scroller-refresh .km-icon::before {
+    background-image: none !important;
+    content: none !important;
+    color: #2984B3;
+    display: none !important;
+}
+.imgSpan {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+#maincontainer123{
+ color:black;   
+}
+
+#maincontainer1 {
+    color:black;
+}
+
+.zone-lmp-tit {
+    color:black;
+}

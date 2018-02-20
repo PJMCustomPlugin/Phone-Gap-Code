@@ -1,0 +1,883 @@
+#moreView div.km-touch-scrollbar.km-vertical-scrollbar{
+    visibility: hidden !important;
+}
+
+#moreView div.km-content.km-widget.km-scroll-wrapper div.km-scroll-container {
+   -webkit-transform: none !important;
+   -transform: none !important;
+}
+.epDiv {
+    background-color: #FFF;
+    width:100%;
+    border-bottom: 1px solid #BCC1C6 !important;
+    border-image: none !important;
+	margin-top: 0px !Important;
+    padding: 0px !important;
+    padding-top: 0px !Important;
+    padding-left: 0px !important;
+    text-align: left;
+    color: black !important;
+    /*border: 0px !important;*/
+    font-size: 1.0em !important;
+    height: auto!important;
+}
+
+.unread_mes_TabLand{
+   height: 11px; width: 11px;
+    float: left;background-color: red; 
+    color: white;border-radius: 10px;margin-top: 12px;margin-left: 17px;
+    margin-right: 5px;
+}
+
+.epAlertHeaderLeftDivTabLand{
+    font-family: HelveticaNeue;
+    color: black;
+    float: left; width: 92%;
+    word-wrap: break-word;
+    margin-top:5px !important;
+    margin-bottom:2px !important;
+    /*font-size: 17px;*/
+   /* margin-left: 2%;*/
+    /*padding-top:10px;*/
+}
+
+#epMessageType {
+    font-size: 19px !important;
+}
+
+#effectiveDateStr {
+    font-size: 12px;
+    padding-top: 1px !important;
+    padding-bottom: 5px !important;
+}
+
+.bannerTypeClass {
+   	height: 25px;
+    border-radius: 4px;
+    margin-left: 0px;
+    margin-right: 5px;
+    /*margin-top:5px;*/
+    margin-bottom:5px !important;
+    font-family:HelveticaNeue;
+    color:#000;
+    font-size:11pt;
+    text-align:center;
+    line-height:25px;
+}
+
+.bannerBGColorPink{
+   background-color: #FECBE5;
+   border: 1px solid #FECBE5;  
+}
+
+.bannerBGColorYellow{
+   background-color: #FEEFCE;
+   border: 1px solid #FEEFCE; 
+}
+
+.bannerBGColorGreen{
+   background-color: #9ACB40;
+   border: 1px solid #9ACB40; 
+}
+
+.alertEPImg {
+    float: left; width: 3%;
+    padding-top:10px;
+    /*margin-right:3%;*/
+    /*text-align:right;*/
+    text-align:left;
+}
+
+.badgeCountText{
+   font-size: 16px !important;
+    font-family:HelveticaNeue;
+    width: 90%; 
+    height: 100%;
+    text-align: center;
+    padding-top: 1px;
+    padding-left: 2px;
+}
+.badgeCountBGCircle{
+   height: 24px; 
+   width: 24px;
+   float: left;
+   background-color: red;
+   color: white;
+   margin-left: 14px;
+   margin-top: 8px;
+   border-radius: 12px;
+}
+
+.epTypesSelectedCountBG{
+   color: black;
+   margin-top: 8px;
+   border-radius: 12px;
+}
+
+.moreTabDisplayState {
+    display:none;
+    float:right;
+}
+.moreBGAlertLand {
+    height:40px;
+}
+.LMPTextGrayStyle {
+    margin-left:3%;
+    padding-top:13px;
+}
+.alertTabSwitchLand {
+    height:44px;
+    border-bottom: 1px solid #BCC1C6;
+    margin-left:3%;
+    margin-right:3%;
+}
+.allowAlertMessageLand {
+    float:left;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;
+    margin-left:3%;
+    padding-top:2%;
+}
+.switchDivClassLand {
+    float:right;
+    margin-right:3%;
+}
+.settingTabLand {
+    padding-top:25px;
+    padding-bottom:5px;
+}
+.zoneLMPTabLand {
+    float:left;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;
+}
+.zoneLMPTabLandImgStyle {
+    float:right;
+    padding-top:12px;
+    margin-right:3%;
+}
+.zoneLMPHyperLandTab {
+    width:100%;
+    text-decoration: none !important;
+    border-style: none !important;
+    font-size:17px !important;
+    height:100% !important;
+    border-radius:5px !important;
+}
+.includeDivStyleLandTab {
+    margin-left:6%;
+    padding-top:13px;
+}
+.notificationIncludeTabLand {
+    margin-left:3%;
+    margin-right:3%;
+    border-radius:5pt
+}
+.includeTabNoneDivTabLand {
+    margin-left:3%;
+    padding-top:13px;
+    color:black;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;
+}
+.doNotIncludeTabLand {
+    margin-left:6%;
+    padding-top:13px;
+}
+.doNotIncludeListTabLand {
+    margin-left:3%;
+    margin-right:3%;
+    border-radius:5pt
+}
+.excludeTabNoneLand {
+    margin-left:3%;
+    padding-top:13px;
+    color:black;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;
+}
+.morePortraitImageStyle {
+    float:right;
+    padding-top:5px;
+}
+.legalPortraitClass {
+    border-style: none;
+}
+.aboutPJMPortraitStyle {
+    width: inherit;
+    text-decoration: none;
+    border-style: none;
+}
+.alertsStatusInPortraitStyle {
+    float:left;
+    color:black;
+    margin-right:0.8em;
+    font-family:HelveticaNeue-Light !important;
+    font-size: 17px;
+    margin-right:10px;
+}
+.imageAfterStatus {
+    float:right;
+}
+.legalDisLandMoreTab {
+     margin-top: 1em;
+    margin-left: 1em;
+}
+.legalDisclaimerInternalTabMore {
+    margin-right: 0.3em;
+    padding-top:-1%
+}
+.moreLandImgStyleClass {
+    float:right;
+    margin-right:5px;
+    margin-top:5px;
+}
+.alertMoreLandStyleClass {
+    background-color:#5597C6;
+}
+.alertMoreLinkLandCSS {
+    padding: 1em;
+}
+.notificationTextColorStyle {
+    margin-right: 0.3em;
+    color:white;
+    padding-top:-1%
+}
+.notificationEnabledStatusTabMoreLand {
+    float:right;
+    margin-right:2em;
+    margin-top:-22px;
+    color:white;
+    font-family: HelveticaNeue-Light;
+    font-size: 17px;
+}
+.allowAlertsLandMoreTabMain {
+    height:44px;
+    margin-left:3%;
+    margin-right:3%;
+    border-radius:5pt;
+}
+.allowAlertsLandMoreTabSubDiv {
+    float:left;
+    font-family:HelveticaNeue;
+    color:black;
+    font-size:17px;
+    margin-left:3.5%;
+    padding-top:2%;
+}
+.individualTabDivLand {
+    float:right;
+    margin-right:3%;
+}
+.setLMPAlertTabLand {
+    margin-left:3%;
+    padding-top:6px;
+}
+.setAlertTextMsgLandTab {
+    height:80px;
+    margin-left:3%;
+    margin-right:3%;
+    border-radius:5pt;
+}
+.setAlertTextMsgLandTabSubDiv {
+    margin-left:3%;
+    padding-top:6px;
+    color:black !important;
+}
+.valueDivTabLand {
+    padding-top:25px;
+}
+.valueDivTabLandChildOne {
+    margin-left:3%;
+    float:left;
+}
+.valueDivTabLandChildOneChild {
+    color:black !important;
+}
+.valueDivTabLandChildTwo {
+    margin-right:3%;
+    float:right;
+    color:#007aff;
+}
+.valueDivTabLandChildTwoLink {
+    color:#408CC0 !important;
+    text-decoration: none !important;
+    border-style: none !important;
+    font-size:17px !important;
+    margin-top:5px !important;
+    height:17px !important;
+}
+.msgThresholdTabLand {
+    padding-top:18px;
+}
+.LmpValueKeyBoardMainDivStyle {
+    display:none;
+    overflow:hidden;
+    position:fixed;
+    overflow-y:hiddenbackground-color: #BBBEC2 !important;
+}
+.navBarCustomStyleforKeyBoard {
+    height:44px !important;
+    border-radius: 6pt 6pt 0pt 0pt !important;
+    border-color:#BCC1C6 !important;
+}
+.navbarSibdiv {
+    position: relative;
+}
+.cancelInLandKeyboard {
+    font-family:HelveticaNeue !important;
+    font-size:15px !important;
+    float:left !important;
+    margin-left:10px !important;
+    border-style: none !important;
+    margin-top:-1px !important;
+}
+.keyboardHeadingLandTab {
+    color:#000000;
+    font-weight:bold;
+}
+.doneInLandKeyboard {
+    font-family:HelveticaNeue !important;
+    font-size:15px !important;
+    float:right !important;
+    margin-right:10px !important;
+    border-style: none !important;
+    margin-top:-1px !important;
+}
+.enterMsgLandTab {
+    background-color: #EBEDEE !important;
+}
+
+.enterMsgLandTabChild {
+    text-align: center;
+    color:black;
+    padding-top:15%;
+}
+.enterMsgLandTabChildOne {
+    text-align: center;
+    margin-top:5%
+}
+.valuezoneNegtiveTabLand {
+    display:none;
+}
+.LMPValueTextValueTabLand {
+    width:60px;
+    color:black !important;
+    background-color:#EBEDEE;
+}
+.LMPThresholdMsgLandTab {
+    margin-top:10%;
+    color:black;
+    font-size:12px;
+    text-align:left;
+    padding-bottom:14.5%;
+    border-bottom:1px solid #BCC1C6
+}
+.LMPThresholdMsgLandTabChild {
+    margin-left:3%;
+}
+.keyboardFirstStyle {
+    float:left; 
+    height : 55px;
+    width : 105px;
+}
+.keyboardSecondStyle {
+    float:left;
+    height : 55px; 
+    width : 111px;
+}
+.keyboardThirdStyle {
+    float:left;
+    height : 55px;
+    width : 104px
+}
+.keyboardFourthStyle {
+    float:left;
+    height : 54px; 
+    width : 105px;
+}
+.keyboardFifthStyle {
+    float:left;
+    height : 54px;
+    width : 111px
+}
+.keyboardSixthStyle {
+    float:left;
+    height : 54px; 
+    width : 104px
+}
+.keyboardSeventhStyle {
+    float:left;
+    height : 53px; 
+    width : 105px;
+}
+.keyboardEigthStyle {
+    float:left;
+    height : 53px;
+    width : 111px;
+}
+.keyboardNinthStyle {
+    float:left;
+    height : 53px;
+    width : 104px;
+}
+.keyBoardRow1 {
+   height : 55px;
+}
+.keyBoardRow2{
+    height : 54px;
+}
+.keyBoardRow3 {
+    height : 53px;
+}
+.lastDivKeyboardcol1 {
+    margin-left:12px;
+    width:93px;
+    height:3px;
+    float:left;
+}
+.lastDivKeyboardcol2 {
+    background-color:#FCFCFD !important;
+    width:110px;
+    height:3px;
+    float:left;
+}
+.lastDivKeyboardcol3 {
+    width:99px;
+    height:3px;
+    float:left;
+    margin-right:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#LMPValueScreen.k-content {
+    
+    background-color: #C1C3C8 !important;
+}
+
+.k-window-content {
+    overflow: hidden !important;
+}
+.cellTitle {
+    font-family: HelveticaNeue-Light;
+    font-size: 17px;
+    color: black;
+    text-align: left;
+    margin-right: 0.3em;
+    padding-top: 12px;
+}
+.cellTitle_tab {
+    padding-left: 2.8em !important;
+    margin-top: -3% !important;
+    font-family: HelveticaNeue-Light;
+    font-size: 17px;
+    color: black;
+}
+.link:after {
+    width: 1rem !important;
+    height: 1rem !important;
+}
+.link:after {
+    margin-top: 2.5px;
+}
+.km-list>li {
+    /*line-height: 1.1em !important;*/
+    
+    height: 44px;
+}
+.menuList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menuList li {
+    /*padding: 1em;*/
+    
+    width: 99.9%;
+    height: 44px;
+    border-bottom: 1px solid #BCC1C6 !important;
+}
+.menuCellImg {
+    height: 24px;
+}
+.cellImg {
+    margin-top: -6px;
+    float: left;
+    margin-left: -5px;
+}
+/*.cellImgReserves{
+    margin-top: -17px;
+    float: left;
+    margin-left: -5px;
+}*/
+.divCellImg {
+    float: left;
+}
+.buttonDivTab .km-button {
+    font-family: HelveticaNeue-Light;
+    text-align: center !important;
+    font-size: 17pt !important;
+    border-radius: 10px !important;
+    background-color: #408CC0 !important;
+    color: white !important;
+    width: 310px !important;
+    height: 45px;
+    padding-top: 6px;
+    /*padding: 0.5%;*/
+    /*padding-top:6px;*/
+}
+/*legalDisclaimerTabView*/
+/*notificationTabView*/
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+.ui-dialog {
+    top: 14% !important;
+    left: 50% !important;
+}
+.LMPText {
+    color: #7A838D;
+    font-size: 14px;
+    font-family: HelveticaNeue;
+}
+.LMPSmallText {
+    color: #7A838D;
+    font-size: 13px;
+    font-family: HelveticaNeue;
+}
+.LMPValueText {
+    color: #7A838D;
+    font-size: 24px;
+    font-family: HelveticaNeue-Bold;
+}
+.km-ios7 span.km-switch {
+    color: #4cda64 !important;
+}
+.grayclass {
+    background-color: #EBEDEE !important;
+}
+#keypad {
+    /*margin: auto;*/
+    /*margin-top: 20px;*/
+    /*border-width: 1px;*/
+}
+/*#keypad tr td {
+            vertical-align: middle;
+            text-align: center;
+            border: 1px solid #000000;
+            
+            font-size: 18px;
+            font-weight: bold;
+            width: 104px;
+            height: 54px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+        }
+        #keypad tr td:hover {
+            background-color: #999999;
+        }*/
+
+#notificationsTabLMPList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#notificationsTabLMPList li {
+    padding: 1em;
+    width: 100%;
+    /*height: 44px;*/
+    
+    list-style-position: inside;
+    border-top: 1px solid #BCC1C6;
+}
+/*individualNotificationTabView*/
+
+.km-content {
+    background-color: #EBEDEE !important;
+}
+#notificationView {
+    background-color: #EBEDEE !important;
+}
+.LMPText {
+    color: #7A838D;
+    font-size: 14px;
+    font-family: HelveticaNeue;
+}
+.LMPSmallText {
+    color: #7A838D;
+    font-size: 13px;
+    font-family: HelveticaNeue;
+}
+.LMPValueText {
+    color: #7A838D;
+    font-size: 24px;
+    font-family: HelveticaNeue-Bold;
+}
+.km-ios7 span.km-switch {
+    color: #4cda64 !important;
+}
+.grayclass {
+    background-color: #EBEDEE !important;
+}
+.notificationsLMPList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#notificationsIncludeLMPTabList {
+    list-style-type: none;
+    /*margin: 1%;*/
+    
+    padding: 0;
+}
+#notificationsExcludeLMPTabList {
+    list-style-type: none;
+    /*margin: 1%;*/
+    
+    padding: 0;
+}
+.notificationsLMPList li {
+    /*padding: 1em;*/
+    
+    width: 100%;
+    height: 44px;
+    list-style-position: inside;
+    border-top: 1px solid #BCC1C6;
+}
+#notificationsIncludeLMPTabList li {
+    /*padding: 1em;*/
+    
+    width: 100%;
+    /*height: 44px;*/
+    
+    border-top: 1px solid #BCC1C6;
+}
+#notificationsExcludeLMPTabList li {
+    /*padding: 1em;*/
+    
+    width: 100%;
+    /* height: 44px;*/
+    
+    border-top: 1px solid #BCC1C6;
+}
+/*alertTab*/
+
+.afterClass {
+    float: right;
+}
+/*zonesList*/
+
+#zonesListul_Tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#zonesListul_Tab li {
+    padding: 1em;
+    width: 100%;
+    height: 44px;
+    list-style-position: inside;
+    border-top: 1px solid #BCC1C6;
+    color: black !important;
+}
+.freqImgsTab {
+    height: 15px;
+}
+/*.km-android .km-listview-wrapper {
+            padding: 0px 0em !important;
+        }
+        .km-android .km-button {
+            height: 20px;
+            background-color: white;
+        }
+        .km-android .km-list>li {
+            //border-bottom: 1px solid #BCC1C6 !important;
+            background-color: white !important;
+        }*/
+
+#viewLatestAlertsTabDiv:hover {
+    background-color: #5597C6;
+}
+#zoneLMPTabDiv  {
+    background-color: #FFF;
+}
+#zoneLMPTabDiv:hover {
+    background-color: #5597C6;
+}
+.nla {
+    font-family: HelveticaNeue;
+}
+.nla {
+    color:#000;
+}
+.nla:active {
+    background-color: #5597C6;
+    color:#FFF;
+}
+.menuListTitle {
+    text-decoration: none !important;
+    border-style: none !important;
+    padding: 0px !important;
+    padding-top: 0px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+
+.menuListTitleNone {
+    text-decoration: none !important;
+    border-style: none !important;
+    padding: 0px !important;
+    padding-top: 0px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+.menuListTitleNoneTab {
+    text-decoration: none !important;
+    border-style: none !important;
+    padding: 0px !important;
+    padding-top: 0px !important;
+    margin: 0px !important;
+    border-radius: 0px !important;
+}
+.menulistTitle:active {
+    background-color: #5597C6 !important;
+    color: white;
+}
+#editTabValdiv .km-button:hover {
+    background-color: transparent;
+    color: #408CC0 !important;
+}
+#cancel:hover {
+    background-color: transparent;
+    color: #408CC0 !important;
+}
+#done:hover {
+    background-color: transparent;
+    color: #408CC0 !important;
+}
+.moreListImg {
+    width: inherit;
+    text-decoration: none !important;
+    border-style: none !important;
+}
+
+.grayArrowImg {
+    width :9px;
+    height :15px;
+    
+}
+
+.grayArrowImgDiv {
+    float:right;
+    padding-top:5px;
+}
+.mobileAlertSettingsLand {
+    margin-left:6%;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:#7A838D;
+}
+.zoneLMPTabBar {
+    border-bottom: 1px solid #BCC1C6;
+    height:44px;
+    margin-left:3%;
+    margin-right:3%;
+    border-radius:5pt;
+}
+.lmpvaluediv {
+    margin-right:30px !important;
+}
+.EpTabBar {
+    border-bottom: 1px solid #BCC1C6;
+    height:44px;
+    margin-left:3%;
+    margin-right:3%;
+    border-radius:5pt;
+}
+.zone-lmp-name1{
+    font-family:HelveticaNeue !important;
+    font-size:17px !important;
+}
+
+
+@media only screen and (max-width: 320px) and (orientation: portrait),
+    only screen and (max-width: 568px) and (orientation: landscape) { 
+        
+    .lmpvaluediv {
+    margin-right:26px !important;
+}
+}
+
+#alertDetailTabContainer{
+    width:100%;
+    text-align: left;
+    color: black !important;
+    background-color: white !important; 
+    font-size: 1.2em !important;
+    /*font-family: HelveticaNeue;*/
+    word-wrap: break-word;
+    font-family: HelveticaNeue;
+    height : 100vh; 
+ }
+
+.epAlertTabTextSettings{
+    margin-left: 6%; margin-right: 6%;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: #7A838D;
+}
+.epAlertsOptionsDiv{
+    margin-left:3%;
+    padding-top:5px;
+    padding-bottom:5px;
+    color: #7A838D;
+    font-size: 14px;
+    font-family: HelveticaNeue;
+}
+
+.epAlertForwardLinkImg{
+    float:right;
+    margin-right:3%;
+    text-align:right;
+}
+
+.km-list input[type=checkbox] {
+    position: initial;
+    padding-right: 20px !important;
+} 
+
+.km-ios7 .km-list>li {
+    border-image: none !important;
+}
+.disabled {
+    pointer-events:none; 
+    opacity:0.6;         
+}
+div.relative {
+    position: relative;
+    width: 100%; 
+}
+
+div.absolute {
+    text-align:center;
+    position: absolute;
+    bottom: 50%;
+    width: 100%;
+    height: 20px;
+}

@@ -1,0 +1,59 @@
+<div id="individualNotificationView" data-role="view" data-layout="pjm-default" style="visibility:visible !important;">
+    <link href="components/more/alerts/zoneLMPAlerts/IndividualNotification/IndividualNotification.css" rel="stylesheet" />
+    <div data-role="header">
+        <div data-role="navbar" id='navbar'>
+            <a data-click='backToZoneLMPAlertsPage' href="#notificationView" data-role="button" data-align="left" class="bc-more" data-transition="slide:right" data-icon="leftArrow">
+                Zone LMP
+            </a>
+            <span id='individualTitle'></span>
+        </div>
+    </div>
+    <div class='LMPText grayClass LMPTextRemainingBackground'>
+    </div>
+    <div class='mapdivclr allowAlertsMainDiv'>
+        <div class="allowAlertsSubClassDiv">
+            Allow Alerts
+        </div>
+        <div id="individualSwitchDiv" class="individualSwitchMainClass">
+            <input id="individualSwitch" type="checkbox" data-change="onIndividualTabChange" data-role="switch" />
+        </div>
+    </div>
+    <div id='frequncyDiv' style='display:none'>
+        <div class='grayClass frequencySubdiv'>
+            <div class='LMPSmallText setLMPAlertSubDiv'>
+                SET ALERT THRESHOLDS
+            </div>
+        </div>
+        <div id='zoneLMPUpperLimitDiv' class="alertZoneLMPDiv">
+            <a class='mapah latestAlertsLink' data-role='button' href='components/more/alerts/zoneLMPAlerts/IndividualNotification/setZoneLMPValue/setZoneLMPLimit.html' data-click='upperLimitDisplay'>
+                <div class='afterclassdiv latestAlertsLinkChild'>
+                    Upper Limit
+                </div>
+                <div style='float: right;margin-right: 3%;'>
+                        <div id='zoneLMPAlertsStatus' class="alertsStatusInPortraitStyle">
+                            <span id='individualLMPUpperValue' class="individualLMPUpperValueClass"></span>
+                        </div>
+                        <div class="imageAfterStatus" style='padding-top: 3px'>
+                            <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+               </div> 
+            </a>
+        </div>
+        <div id='zoneLMPLowerLimitDiv' class="alertZoneLMPDiv">
+            <a class='mapah latestAlertsLink' data-role='button' href='components/more/alerts/zoneLMPAlerts/IndividualNotification/setZoneLMPValue/setZoneLMPLimit.html' data-click='lowerLimitDisplay'>
+                <div class='afterclassdiv latestAlertsLinkChild'>
+                    Lower Limit
+                </div>
+                <div style='float: right;margin-right: 3%;'>
+                        <div id='zoneLMPAlertsStatus' class="alertsStatusInPortraitStyle">
+                            <span id='individualLMPLowerValue' class="individualLMPLowerValueClass"></span><br/>
+                        </div>
+                        <div class="imageAfterStatus" style='padding-top: 3px'>
+                            <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+               </div> 
+            </a>
+        </div>
+    </div>
+    <script src="components/more/alerts/zoneLMPAlerts/IndividualNotification/IndividualNotification.js" type="text/javascript"></script>
+</div>

@@ -1,0 +1,82 @@
+<div id='bgImg' align='center'>
+    <div align='center'> <img id="logoImg" src='styles/images/pjmlogofinal.png' style="margin-top:8%;margin-bottom:6%" /> </div>
+    <div style='width:301px;background-color:white;border-radius: 6pt;'
+        align='left'>
+        <div style='color:black;padding:10px;font-family:HelveticaNeue,sans-serif,Roboto regular;font-size:14px'> By utilizing this application user hereby agrees the information provided is for informational and educational purposes
+            only. PJM expressly disclaims any obligation to correct or update information posted in this application or any
+            warranty of any kind, whether expressed or implied, as to any information or other matters whatsoever arising from
+            or relating to this application. Users accessing this application and relying on the information contained herein
+            do so at their own risk - the information should not at any time be relied upon to govern business or financial
+            decisions. In no event shall PJM be liable for any damages of any kind, including, but not limited to, direct,
+            indirect, general, special, incidental or consequential damages arising out of any use of the information contained
+            herein.</div>
+    </div>
+    <div style='margin-top:3%;' align='center'>
+        <a id='acceptBtn' data-role='button' style="border-color:black;background-color:white;height:42px;width:148px;padding-top:12px"
+            data-click='accept' data-transition="slide:left"> <span style="color:black;font-family:HelveticaNeue,sans-serif,Roboto regular;font-size:14px;">Accept</span> </a>
+        <div style='margin-top:2px;'>
+            <image id='loadingSpinner' src='img/loading_spinner.gif' style='display:none;' />
+        </div>
+        <style>
+            .km-content {
+                background-color: #3399CB !important;
+            }
+        </style>
+        <script>
+            var isDeviceRegistered = false;
+            var isInitialDataAvailable = false;
+            var isErrorOccured = false;
+            var isDeviceRegistrationFailed = false;
+            var refreshIntervalId;
+            setTimeout(function () {
+                if (device.platform == 'android' || device.platform == 'Android') {
+                    ActivityIndicator.hide();
+                }
+                navigator.splashscreen.hide();
+                try {
+                    statusBarChanges();
+                } catch (error) {}
+            }, 10);
+
+            var size = {
+                width: window.innerWidth || document.body.clientWidth,
+                height: window.innerHeight || document.body.clientHeight
+            }
+            var logoImgheight = size.height * 12 / 100;
+            var logoImgwidth = size.width * 65 / 100;
+            $('#logoImg').css('height', logoImgheight);
+
+            var accept = function () {
+                // Accept button disable
+                $('#loadingSpinner').show();
+                $('#acceptBtn').prop('disabled', true);
+                $('#acceptBtn').css('background-color', '#D3D3D3');
+                // Start Spinner
+                deviceModel.getDeviceDetailsAndRegister();
+                appService.getInitialZoneLMPData();
+                refreshIntervalId = setInterval(navigateToZonePage, 50);
+            }
+
+            function navigateToZonePage(){
+                if(isDeviceRegistrationFailed || isErrorOccured ){
+                     // enable accept button.
+                    clearInterval(refreshIntervalId);
+                    $('#acceptBtn').prop('disabled', false);
+                    $('#acceptBtn').css('background-color', 'white');
+                    $('#loadingSpinner').hide();
+                 }
+                 if(isDeviceRegistered && isInitialDataAvailable){
+                    $('#loadingSpinner').hide();
+                    clearInterval(refreshIntervalId);
+                    app.navigate("components/zoneLMPMap/zoneLMPMap.html", "slide:left");
+                    setTimeout(function () {
+                        //by deafult enable zone LMP
+                        $('div.km-footer div.km-widget.km-tabstrip a.km-state-active').removeClass("km-state-active");
+                        $('div.km-footer div.km-widget.km-tabstrip a:nth-child(2)').addClass("km-state-active");
+                    },200);
+                }
+                
+            }
+        </script>
+    </div>
+    </div

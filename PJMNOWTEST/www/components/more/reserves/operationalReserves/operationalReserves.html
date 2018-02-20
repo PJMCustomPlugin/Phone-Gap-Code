@@ -1,0 +1,37 @@
+<div id="operationalReservesView" data-role="view" data-title="Operational Reserves" data-layout="pjm-default" data-elastic="false" 
+data-init="initPullToRefreshScrollerForOperationalReserves" data-before-show="operationalReservesInit">
+    <script src="components/more/reserves/operationalReserves/operationalReservesRuntime.js"></script>
+    <link rel="stylesheet" href="components/more/reserves/operationalReserves/operationalReserves.css" />
+    <header data-role="header">
+        <div data-role="navbar">
+            <a href="#moreView" data-role="button" data-align="left" class="bc-more" data-click="backToMoreFromOperationalReserves" 
+                     data-transition='slide:right' data-icon="leftArrow">More</a>
+            <a id="dispatchedReservesLink" data-role="button" href="components/more/reserves/dispatchedReserves/dispatchedReserves.html" 
+                data-align="right" class="link-font-size" data-icon="rightArrowReserves" style="margin-top: -4px;text-align:right;" data-click='dispatchedReservesArrowClick'>
+                <span class="andriod-dispatched" id="dispatched">Dispatched</span>
+                <span style="display: block;line-height: 1.5;" class="reserves" id="reserve">Reserves</span>
+            </a>
+            <a id="operationalReservesRefresh" class="tablateView" data-role="button" data-align="right" 
+                data-click="pullToRefreshForOperationalReserves"><img src="styles/images/rotate.png" width=25px height=25px>
+            </a>
+            <span data-role="view-title"></span>
+            <span data-align="center" id="tablateUpdatedDate" style="font-family: HelveticaNeue,sans-serif,Roboto regular;font-size:1em;display:block;font-weight:normal;" class="datediv"></span>
+        </div>
+    </header>
+    <script src="components/more/reserves/operationalReserves/operationalReserves.js"></script>
+    <div id='operationalReservesWhite' class='mapdivclr'>
+        <div id="refreshmap" class="divbg">
+            <center id='updateOperationalReserves' style="display:none;padding-bottom:25px;">
+                <div><img id='rotatingImgOperationalReserves' src='styles/images/rotate.png' height='25px'/></div>
+                <span style="color:#5597C6; !important;padding-bottom:20px;">Updating</span>
+            </center>
+            <div id="refreshReservesGraph" style="background-color:white !important;">
+                <div class='datediv' id="lastOperationalReservesUpdatedDate"></div>
+                <div class='operationalReservesText' id="ConMW">
+                    Values shown in MW
+                </div>
+                <div id="operationalReservesChart" ></div>
+            </div>
+       </div>
+    </div>
+</div>

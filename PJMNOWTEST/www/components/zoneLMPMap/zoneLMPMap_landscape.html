@@ -1,0 +1,195 @@
+<link href="components/zoneLMPMap/zoneLMPMap.css" rel="stylesheet" />
+<div id="zonelmplid" style="width:31%;float:right;border-left:2px solid #BCC1C6;">
+    <div data-role="view" id="zoneLMPListView" data-title="Zone LMP" data-layout="pjm-default" style="visibility:visible !important;">
+        <div data-role="header">
+            <div data-role="navbar" style="padding-bottom:8px !important;padding-top:5px !important;text-align:right;padding-right:10px;">
+                <a id='editLMPListTab' data-role="button" data-align="right" style="color:#408CC0;">Edit</a>
+                <a id='doneLMPListTab' data-role="button" data-align="right" style="color:#408CC0;">Done</a>
+            </div>
+        </div>
+        <div id="refreshmaps" class="divbg" style="position:relative">
+            <div class='scrollable' id="zoneLMP-listview">
+                <div class='wrap' id='tPar'>
+                    <div class='list-head'>
+                        <div class='zone-hub-tablate'>Zone/Hub</div>
+                        <div class='lmp-mw-tablate'>LMP ($/MW)</div>
+                    </div>
+                </div>
+                <div>
+                    <ul id="sortableTablate" class='sortableTablateList' style="overflow-y:scroll">
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+            var isLMPListSavedTab = false;
+            var sortableTouched = false;
+            var currentZoneLMPArray;
+            var LMPListToScroll_Tab = true;
+
+            function renderZoneLMPListTablate() {
+               // alert(" ============ tablateZoneLMPMap.html ========= renderZoneLMPListTablate ========== ")
+                LMPListToScroll_Tab = true;
+                var currentZoneLMPObj = dbapp.zoneData;
+               // alert(" currentZoneLMPObj : "+JSON.stringify(currentZoneLMPObj));
+                currentZoneLMPArray = currentZoneLMPObj.zoneLMPList;
+                var sortableZoneArray = localStorage.getItem("sortableZoneArray");
+                var sortableDiv = "";
+                if (typeof sortableZoneArray === 'undefined' || sortableZoneArray === null) {
+                    for (var index = 0; index < currentZoneLMPArray.length; index++) {
+                        var colorAttr = ZoneMapModule.getZoneLmpColor(currentZoneLMPArray[index].Zone_LMP_Value);
+                        var color = colorAttr["fill"];
+                        sortableDiv = sortableDiv + 
+                                    "<li id='" + index + "'>"+
+                                            "<div class='zone-lmp-name_Tab' style='font-family: HelveticaNeue-Light;float: left;font-size: 14pt;width: 50%;margin-top: -4px;margin-left: -6px;'>" + currentZoneLMPArray[index].Zone_LMP + "</div>"+
+                                            "<div class='lmp-color-Tab' style='margin-top:0.8px;float:left;width: 15px;height: 15px;background-color:" + color + "'></div>"+
+                                            "<div class='lmp-mw-val_Tab' style='margin-top:-5px;font-family: HelveticaNeue;float: right;font-size: 17pt;width: 50%;text-align: right;margin-right:-10px'>" + currentZoneLMPArray[index].Zone_LMP_Value + 
+                                                    "<img src='styles/images/Reorder_Icon.png' class='reorderingTab'>" + 
+                                            "</div>"+
+                                     "</li>";
+                    }
+
+                } else {
+                    var tempCurrentZoneArray = JSON.parse(sortableZoneArray);
+                    for (var k = 0; k < tempCurrentZoneArray.length; k++) {
+                        for (var index = 0; index < currentZoneLMPArray.length; index++) {
+                            if (tempCurrentZoneArray[k].Zone_LMP == currentZoneLMPArray[index].Zone_LMP) {
+                                var colorAttr = ZoneMapModule.getZoneLmpColor(currentZoneLMPArray[index].Zone_LMP_Value);
+                                var color = colorAttr["fill"];
+                                sortableDiv = sortableDiv + 
+                                            "<li id='" + index + "'>"+
+                                                "<div class='zone-lmp-name_Tab' style='font-family: HelveticaNeue-Light;float: left;font-size: 14pt;width: 50%;margin-top: -4px;margin-left: -6px;'>" + currentZoneLMPArray[index].Zone_LMP + "</div>"+
+                                                "<div class= 'lmp-color-Tab' style='margin-top:0.8px;float:left;width: 15px;height: 15px;background-color:" + color + "'></div>"+
+                                                "<div class='lmp-mw-val_Tab' style='margin-top: -5px;font-family: HelveticaNeue;float: right;font-size: 17pt;width: 50%;text-align: right;margin-right:-10px'>" + currentZoneLMPArray[index].Zone_LMP_Value + 
+                                                    "<img style='display:none' src='styles/images/Reorder_Icon.png' class='reorderingTab'>" + 
+                                                "</div>"+
+                                            "</li>";
+                            }
+                        }
+                    }
+                }
+
+                var sortdiv = document.getElementById("sortableTablate");
+                sortdiv.innerHTML = "";
+                sortdiv.innerHTML = sortdiv.innerHTML + sortableDiv;
+
+                $(".reorderingTab").bind('touchstart', function (event) {
+                    $("#sortableTablate li").css("border-top", "1px solid #BCC1C6");
+                    LMPListToScroll_Tab = false;
+                });
+                $(".reorderingTab").bind('touchend', function (event) {
+                    $("#sortableTablate li").css("border-top", "0px solid #BCC1C6");
+                    LMPListToScroll_Tab = true;
+                });
+
+            }
+
+            renderZoneLMPListTablate();
+
+            $(document).ready(function () {
+                //alert(" tablateZoneLMPMap.html is ready ");
+                var LMPListLastY_Tab;
+                var LMPListCurrentY_Tab;
+
+
+                var headerheight = $('.km-header').height();
+                var footerheight = $('.km-footer').height();
+
+                var sortHeight = window.innerHeight - headerheight - footerheight - 68;
+                $(".sortableTablateList").css('height', sortHeight);
+
+                // reset touch position on touchstart
+                $('#sortableTablate').bind('touchstart', function (e) {
+                    if (LMPListToScroll_Tab) {
+                        var LMPListCurrentY_Tab = e.originalEvent.touches[0].clientY;
+                        LMPListLastY_Tab = LMPListCurrentY_Tab;
+                        e.preventDefault();
+                    }
+                });
+
+                // get movement and scroll the same way
+                $('#sortableTablate').bind('touchmove', function (e) {
+                    if (LMPListToScroll_Tab) {
+                        var LMPListCurrentY_Tab = e.originalEvent.touches[0].clientY;
+                        delta = LMPListCurrentY_Tab - LMPListLastY_Tab;
+                        sortableTouched = true;
+                        this.scrollTop += delta * -1;
+                        LMPListLastY_Tab = LMPListCurrentY_Tab;
+                    }
+                });
+
+                // get movement and scroll the same way
+                $('#sortableTablate').bind('touchend', function (e) {
+                    sortableTouched = false;
+                });
+
+                $('#zoneLMP-listview').addClass('mapdivclr');
+                var $state = $('#updateImg');
+                var isRefreshed = false;
+
+                $('.reorderingTab').hide();
+                $('#doneLMPListTab').hide();
+                
+                $('#editLMPListTab').click(function () {
+                    $('.reorderingTab').show();
+                    $('#editLMPListTab').hide();
+                    $('#doneLMPListTab').show();
+
+                    $("#sortableTablate").sortable({
+                        scroll: true,
+                        scrollSensitivity: 10,
+                        axis: 'y',
+                        containment: "parent",
+                        revert: true,
+                        handle: '.reorderingTab',
+                        disabled: false,
+                        helper: "clone",
+                        start: function (event, ui) {
+                            sortableTouched = true;
+                            isLMPListSavedTab = false;
+                        },
+                        stop: function (evenet, ui) {
+                            sortableTouched = false;
+                        },
+                        sort: function (e, ui) {
+                            doZoneLMPListSort(this,ui);
+                        },
+                    });
+                    $("#sortableTablate").disableSelection();
+
+                });
+
+                $('#doneLMPListTab').click(function () {
+                    //alert("done button is clicked");
+                    var sortableZones = [];
+                    isLMPListSavedTab = true;
+                    $('.reorderingTab').hide();
+                    $('#doneLMPListTab').hide();
+                    $('#editLMPListTab').show();
+                    $("#sortableTablate").sortable({
+                        disabled: true
+                    });
+                    var idsInOrder = $("#sortableTablate").sortable("toArray");
+                    saveSortableZoneLMPArray(idsInOrder,currentZoneLMPArray,sortableZones);
+                });
+
+                var isTouchMoveTab = false;
+                $("li").on("touchend",function() { console.log("---- touchend ----");
+                    if(!isTouchMoveTab){
+                        var item_Tab = $(this);
+                        var zoneLMPName_Tab = item_Tab.find('div.zone-lmp-name_Tab').text();
+                        var zoneColor_Tab = item_Tab.find('div.lmp-color-Tab').css("background-color");
+                        zoneTrendPopupGeneration(zoneLMPName_Tab,zoneColor_Tab);
+                    }
+                    isTouchMoveTab =false;
+                });
+                $("li").on("touchmove",function() {
+                    console.log("++++ touchmove ++++");
+                    isTouchMoveTab=true;
+                    //alert("++++++ click event ++++"+zoneLMPName+"+++++"+zoneColor);
+                });
+            });
+        </script>
+    </div>
+</div>
+</div>

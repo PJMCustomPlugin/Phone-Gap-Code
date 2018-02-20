@@ -1,0 +1,253 @@
+ #legalDisclaimerView .km-content {
+    background-color: #FFF !important;
+}
+#aboutView .km-content {
+    background-color: #FFF !important;
+}
+#feedbackView  .km-content {
+    background-color: #FFF !important;
+}
+body, body * {
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    -webkit-user-callout: none !important;
+    -webkit-touch-callout: none !important;
+}
+
+.km-on-android.km-ios7 .km-view-title {
+    font-weight: bold;
+    line-height: 2.3em;
+   	padding-top:6px !important;
+}
+.km-on-android.km-ios7 .km-rightitem .km-button {
+    border: 0 !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: .26rem !important;
+    padding-left: .2em !important;
+    padding-right: 0.2em !important;
+}
+.km-on-android.km-ios7 .km-leftitem .km-button {
+    border: 0 !important;
+    margin-top: 0.8rem !important;
+    margin-bottom: .26rem !important;
+    padding-left: 0.2em !important;
+    padding-right: 0.2em !important;
+}
+/*.km-ios7 .km-view-title {
+    font-weight: bold;
+    line-height: 2.8em;
+    
+}*/
+.km-content {
+    background-color: #EBEDEE !important;
+}
+.k-window {
+    border-radius: 6pt !important;
+}
+.moreContent_phone {
+    font-family: HelveticaNeue, sans-serif, roboto regular;
+    font-size: 16px;
+    color: black;
+    padding: 3%;
+}
+.moreContent_tab {
+    font-family: HelveticaNeue,sans-serif,roboto regular;
+    font-size: 17px;
+    color: black;
+    padding: 1.5%;
+}
+.datediv {
+    color: #7A848D;
+    font-family: HelveticaNeue,sans-serif,roboto regular;
+    font-size: 11pt;
+    padding-left: 2% !important;
+    padding-top: 4px;
+}
+.mapdivclr {
+    background-color: white !important;
+}
+.lastupdated {
+    color: #7A848D;    
+    font-family: HelveticaNeue,sans-serif,roboto regular;
+}
+.lastupdatedLandscape {
+    font-size: 1.0em;
+    color: #7A848D;
+}
+.bc-more {
+    color: #408CC0 !important;
+}
+.km-ios7 .k-list,
+.km-ios7 .k-slider,
+.km-ios7 .km-widget {
+    color: #5597C6 ;
+}
+.content {
+    font-size: 1.2em !important;
+    font-family: Arial, Helvetica, sans-serif,roboto regular;
+    padding: 5%;
+    color: black
+}
+.mainTitle {
+    padding-top: 0% !important;
+    padding-left: 2%;
+    font-size: 1.0em;
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+.divbg {
+    background-color: #EBEDEE;
+}
+.rot {
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 0.9s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    margin-top: 35px
+}
+
+/*Footer changes*/
+
+.km-phone .km-tabstrip .km-icon {
+    height: 36px !important;
+    width: 36px !important;
+}
+.km-leftArrow:after,
+.km-leftArrow:before {
+    content: "\e0e2";
+    -webkit-transform: rotate(-180deg);
+}
+.km-TableftArrow:after,
+.km-TableftArrow:before {
+    content: "\e0e2";
+    -webkit-transform: rotate(-180deg);
+}
+.km-rightArrow:after,
+.km-rightArrow:before {
+    content: "\e0e2";
+}
+ .km-rightitem .km-button .km-icon {    
+    float: right;
+    margin-left: 0.1em;
+    margin-right: -0.4em;
+    color:"#5597C6 !important";
+   font-size: 1.4em;
+   margin-top: -0.8px
+}
+.km-on-android .km-rightitem .km-button .km-icon {    
+    float: right;
+    margin-left: 0.1em;
+    margin-right: -0.4em;
+    color:"#5597C6 !important";
+   font-size: 1.4em;
+   margin-top: -3.8px
+}
+/*.km-rightitem .km-button .km-icon {
+  
+   
+   
+}
+*/
+ .km-leftitem .km-button .km-icon {
+    float: left;
+    margin-right: -0.2em;
+    font-size: 1.4em;
+       margin-top: -0.9px;
+}
+
+.km-on-android .km-leftitem .km-button .km-icon {
+    float: left;
+    margin-right: -0.2em;
+    font-size: 1.4em;
+    margin-top: -1.8px;
+}
+/*.km-leftitem .km-button .km-icon {
+  
+}*/
+ .km-rightitem .km-button .km-icon.km-rightArrowTieflows {
+    margin-top: 3px !important;
+    margin-right: 2px;
+}
+.km-rightArrowTieflows:after,
+.km-rightArrowTieflows:before {
+    content: "\e0e2";
+    font-size: 1.4em;
+}
+.km-rightitem .km-button .km-icon.km-rightArrowReserves {
+    margin-top: 3px !important;
+    margin-right: 2px;
+     color: #408CC0 !important;
+}
+.km-rightArrowReserves:after,
+.km-rightArrowReserves:before {
+    content: "\e0e2";
+    font-size: 1.4em;
+} 
+        /*  .km-pane.km-pane.km-on-android .km-view .km-icon:after {
+    			background: none;
+        }*/
+        /*------Icon customization-------*/
+        
+        .km-tabstrip .km-button .km-icon {
+            padding-bottom: 0px !important;
+            /*padding-left:3px;*/
+        }
+        .km-ios7 .km-tabstrip .km-button {
+            font-size: 9pt !important;
+            font-family: HelveticaNeue ,sans-serif,roboto regular !important;
+            color: #7A848D !important;
+        }
+        .km-root .km-tabstrip .km-button.km-state-active {
+            color: #2984B3 !important;
+        }
+        .km-ios7 .km-button {
+            padding: 1px;
+        }
+        .showcss {
+            display: block;
+        }
+        .hidecss {
+            display: none;
+        }
+        .km-ios7 .km-navbar,
+        .km-ios7 .km-tabstrip {
+            background-color: rgb(244, 244, 244);
+        }
+
+.km-leftitem .km-button .km-icon.km-TableftArrow {
+    float: left;
+    margin-right: -0.1em;
+    font-size: 1.4em;
+    margin-top: 18.1px;
+}
+
+/*.km-on-android .km-leftitem .km-button .km-icon.km-TableftArrow { 
+
+
+}*/
+/*.km-on-android.km-ios7 .km-leftitem .km-button .km-icon.km-TableftArrow{
+    border: 0 !important;
+    margin-top: 0.4rem !important;
+    margin-bottom: .26rem !important;
+    padding-left: 0.2em !important;
+    padding-right: 0.2em !important;
+}
+.km-on-android.km-ios7 .km-leftitem .km-button .km-icon.km-TableftArrow .km-text {
+    line-height:2em !important
+}
+  */  
+
+
+.km-on-android.km-ios7 #moreView .km-leftitem .km-button {
+    border: 0 !important;
+    margin-top: 0.2rem !important;
+    margin-bottom: .26rem !important;
+    padding-left: 0.2em !important;
+    padding-right: 0.2em !important;
+}

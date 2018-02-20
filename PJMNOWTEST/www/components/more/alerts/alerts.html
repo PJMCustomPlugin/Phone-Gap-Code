@@ -1,0 +1,95 @@
+<div id="alertView" data-role="view" data-title="Alerts" data-layout="pjm-default" style="visibility:visible !important;" data-before-show="resetBadgeCount"  data-init='alertsInit'>
+    <link href="components/more/alerts/alerts.css" rel="stylesheet" />
+    <link href="components/more/more.css" rel="stylesheet" />
+        <script src="components/more/alerts/alerts.js"></script>
+    <script src="components/more/more.js"></script>
+    <div data-role="header">
+        <div data-role="navbar">
+            <a href="components/more/more.html" data-role="button" data-align="left" class="bc-more" data-click="navigateFromAlertsToMore" data-icon="leftArrow" data-transition="slide:right">More</a>
+            <span data-role="view-title"></span>
+        </div>
+    </div>
+    <div class='LMPText grayClass alertBGHeight'>
+        <div class="alertBGSubDiv"></div>
+    </div>
+    <div class='mapdivclr allowAlertsMainDiv'>
+        <div class="allowAlertsSubDiv">
+            Allow Alerts
+        </div>
+        <div id='alertSwitchDiv' class="alertSwitchDivAlign">
+            <input id="alertSwitch" type="checkbox" data-change="onAlertsChange" data-role="switch" />
+        </div>
+    </div>
+    <div id='viewLatestAlertsDiv' class='mapdivclr' style="height:44px;border-bottom: 1px solid #BCC1C6;display:none">
+        <a id="latestAlerts" class='mapah latestAlertsLink' style="line-height: normal;margin-top:-10px!important;" data-role='button' 
+           href='components/more/alerts/latestAlerts/latestAlerts.html' data-click='navigateFromAlertsToLatestAlerts'>
+            <div id='latestAlertsTextDiv' class='afterclassdiv latestAlertsLinkChild' style="padding-top: 10px;width:80%;">
+                Latest Alerts and Messages 
+            </div>
+            <div id='badgeCountDivId' class='badgeCountBGCircle' style='display:none'>
+                <div id='badgeId' class='badgeCountText'><span></span></div>
+            </div>
+            <div style='float:right;padding-top:13px;margin-right:3%;text-align:right;width:2%'>
+                <img width='9px' height='15px' src='styles/images/gray_arrow.png' />
+            </div>
+        </a>
+    </div>
+    <div id='settingsDiv' class='grayClass' style='display:none'>
+        <div class='LMPsmallTextPhone alertsSettingDiv'>
+            SETTINGS
+        </div>
+        <div id='zoneLMPDiv' class="alertZoneLMPDiv">
+            <a class='mapah latestAlertsLink' data-role='button' href='components/more/alerts/zoneLMPAlerts/zoneLMPAlerts.html' data-click='navigateFromAlertsToSetZoneLMP'>
+                <div class='afterclassdiv latestAlertsLinkChild'>
+                    Zone LMP
+                </div>
+                <div style='float: right;margin-right: 3%;'>
+                        <div id='zoneLMPAlertsStatus' class="alertsStatusInPortraitStyle">
+                        </div>
+                        <div class="imageAfterStatus" style='padding-top: 3px'>
+                            <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+               </div> 
+            </a>
+        </div>
+        <div id='epArrowDiv' class="alertZoneLMPDiv">
+            <a class='latestAlertsLink' data-role='button' href='components/more/alerts/epAlerts/epAlerts.html' data-click='navigateFromAlertsToEP'>
+                <div class='afterclassdiv latestAlertsLinkChild'>
+                    Emergency Procedures
+                </div>
+                <div style='float: right;margin-right: 3%;'>
+                        <div id='epAlertsStatus' class="alertsStatusInPortraitStyle">
+                        </div>
+                        <div class="imageAfterStatus" style='padding-top: 3px'>
+                            <img class="grayArrowImg" width='9px' height='15px' src='styles/images/gray_arrow.png' />
+                        </div>
+               </div> 
+            </a>
+        </div>
+        <div id="iosAlertsSettings" class='LMPsmallTextPhone mobileAlertSettings' style="display:none;">
+            Alert options can be changed in Settings > Notifications.<br><br>Note: Zone LMP alerts do not show as badges.
+        </div>
+        <div id="androidAlertsSettings" class='LMPsmallTextPhone mobileAlertSettings' style="display:none;">
+            Alert options can be changed in Settings > Sounds and notifications.<br><br>Note: Zone LMP alerts do not show as badges.
+        </div>
+        <div id="zoneListWaitLogo" class="loader" style="display:none;">
+            &nbsp;
+        </div>
+    </div>
+    <div id="modaldialog_alerts" style="display:none">
+        <div class="feedbackHeading">
+            How do you like our new features?
+        </div>
+        <div class="feedbackContent">
+            Please provide us feedback so we can continue to improve PJM Now.
+        </div>
+        <div class="feedbackFooter">
+            <div id='Laterbtn_Alerts' class="feedbackFooterLater">
+                <center style='margin-top:14px'>Later</center>
+            </div>
+            <div id='Okbtn_Alerts' class="feedbackFooterOk">
+                <center style='margin-top:14px'>OK</center>
+            </div>
+        </div>
+    </div>
+</div>
